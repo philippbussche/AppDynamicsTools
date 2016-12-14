@@ -1,0 +1,4378 @@
+<health-rules controller-version='004-000-008-003'>
+
+<health-rule>
+<name>Availability_new_mbba_hmiadm</name>
+<type>OTHER</type>
+<description/>
+<enabled>true</enabled>
+<is-default>false</is-default>
+<always-enabled>true</always-enabled>
+<duration-min>20</duration-min>
+<wait-time-min>30</wait-time-min>
+<affected-entities-match-criteria>
+<other-affected-entities-match-criteria>
+<entity>
+<entity-type>APPLICATION</entity-type>
+</entity>
+</other-affected-entities-match-criteria>
+</affected-entities-match-criteria>
+<critical-execution-criteria>
+<entity-aggregation-scope>
+<type>ANY</type>
+<value>0</value>
+</entity-aggregation-scope>
+<policy-condition>
+<type>leaf</type>
+<display-name>testFailed</display-name>
+<condition-value-type>ABSOLUTE</condition-value-type>
+<condition-value>2.0</condition-value>
+<operator>GREATER_THAN</operator>
+<condition-expression/>
+<use-active-baseline>false</use-active-baseline>
+<metric-expression>
+<type>leaf</type>
+<function-type>SUM</function-type>
+<value>0</value>
+<is-literal-expression>false</is-literal-expression>
+<display-name>null</display-name>
+<metric-definition>
+<type>ABSOLUTE_METRIC_SCOPE</type>
+<logical-metric-name>Application Infrastructure Performance|AppDynamicsVM|Custom Metrics|URL Monitor|NEW_MBBA_HMIADM|Pattern Matches|TestFailed|Count</logical-metric-name>
+<metric-name>Custom Metrics|URL Monitor|NEW_MBBA_HMIADM|Pattern Matches|TestFailed|Count</metric-name>
+<entity>
+<entity-type>APPLICATION_COMPONENT</entity-type>
+<application-component>AppDynamicsVM</application-component>
+</entity>
+</metric-definition>
+</metric-expression>
+</policy-condition>
+</critical-execution-criteria>
+<warning-execution-criteria>
+<entity-aggregation-scope>
+<type>ANY</type>
+<value>0</value>
+</entity-aggregation-scope>
+<policy-condition>
+<type>leaf</type>
+<display-name>statusNotSuccesful</display-name>
+<condition-value-type>ABSOLUTE</condition-value-type>
+<condition-value>15.0</condition-value>
+<operator>LESS_THAN</operator>
+<condition-expression/>
+<use-active-baseline>false</use-active-baseline>
+<metric-expression>
+<type>leaf</type>
+<function-type>SUM</function-type>
+<value>0</value>
+<is-literal-expression>false</is-literal-expression>
+<display-name>null</display-name>
+<metric-definition>
+<type>ABSOLUTE_METRIC_SCOPE</type>
+<logical-metric-name>Application Infrastructure Performance|AppDynamicsVM|Custom Metrics|URL Monitor|NEW_MBBA_HMIADM|Status</logical-metric-name>
+<metric-name>Custom Metrics|URL Monitor|NEW_MBBA_HMIADM|Status</metric-name>
+<entity>
+<entity-type>APPLICATION_COMPONENT</entity-type>
+<application-component>AppDynamicsVM</application-component>
+</entity>
+</metric-definition>
+</metric-expression>
+</policy-condition>
+</warning-execution-criteria>
+</health-rule>
+
+
+<health-rule>
+<name>Availability_new_mbba_speech</name>
+<type>OTHER</type>
+<description/>
+<enabled>true</enabled>
+<is-default>false</is-default>
+<always-enabled>true</always-enabled>
+<duration-min>20</duration-min>
+<wait-time-min>30</wait-time-min>
+<affected-entities-match-criteria>
+<other-affected-entities-match-criteria>
+<entity>
+<entity-type>APPLICATION</entity-type>
+</entity>
+</other-affected-entities-match-criteria>
+</affected-entities-match-criteria>
+<critical-execution-criteria>
+<entity-aggregation-scope>
+<type>ANY</type>
+<value>0</value>
+</entity-aggregation-scope>
+<policy-condition>
+<type>leaf</type>
+<display-name>testFailed</display-name>
+<condition-value-type>ABSOLUTE</condition-value-type>
+<condition-value>2.0</condition-value>
+<operator>GREATER_THAN</operator>
+<condition-expression/>
+<use-active-baseline>false</use-active-baseline>
+<metric-expression>
+<type>leaf</type>
+<function-type>SUM</function-type>
+<value>0</value>
+<is-literal-expression>false</is-literal-expression>
+<display-name>null</display-name>
+<metric-definition>
+<type>ABSOLUTE_METRIC_SCOPE</type>
+<logical-metric-name>Application Infrastructure Performance|AppDynamicsVM|Custom Metrics|URL Monitor|NEW_MBBA_SPEECH|Pattern Matches|TestFailed|Count</logical-metric-name>
+<metric-name>Custom Metrics|URL Monitor|NEW_MBBA_SPEECH|Pattern Matches|TestFailed|Count</metric-name>
+<entity>
+<entity-type>APPLICATION_COMPONENT</entity-type>
+<application-component>AppDynamicsVM</application-component>
+</entity>
+</metric-definition>
+</metric-expression>
+</policy-condition>
+</critical-execution-criteria>
+<warning-execution-criteria>
+<entity-aggregation-scope>
+<type>ANY</type>
+<value>0</value>
+</entity-aggregation-scope>
+<policy-condition>
+<type>leaf</type>
+<display-name>statusNotSuccesful</display-name>
+<condition-value-type>ABSOLUTE</condition-value-type>
+<condition-value>15.0</condition-value>
+<operator>LESS_THAN</operator>
+<condition-expression/>
+<use-active-baseline>false</use-active-baseline>
+<metric-expression>
+<type>leaf</type>
+<function-type>SUM</function-type>
+<value>0</value>
+<is-literal-expression>false</is-literal-expression>
+<display-name>null</display-name>
+<metric-definition>
+<type>ABSOLUTE_METRIC_SCOPE</type>
+<logical-metric-name>Application Infrastructure Performance|AppDynamicsVM|Custom Metrics|URL Monitor|NEW_MBBA_SPEECH|Status</logical-metric-name>
+<metric-name>Custom Metrics|URL Monitor|NEW_MBBA_SPEECH|Status</metric-name>
+<entity>
+<entity-type>APPLICATION_COMPONENT</entity-type>
+<application-component>AppDynamicsVM</application-component>
+</entity>
+</metric-definition>
+</metric-expression>
+</policy-condition>
+</warning-execution-criteria>
+</health-rule>
+
+
+<health-rule>
+<name>Availability_new_mbba_srvadm</name>
+<type>OTHER</type>
+<description/>
+<enabled>true</enabled>
+<is-default>false</is-default>
+<always-enabled>true</always-enabled>
+<duration-min>20</duration-min>
+<wait-time-min>30</wait-time-min>
+<affected-entities-match-criteria>
+<other-affected-entities-match-criteria>
+<entity>
+<entity-type>APPLICATION</entity-type>
+</entity>
+</other-affected-entities-match-criteria>
+</affected-entities-match-criteria>
+<critical-execution-criteria>
+<entity-aggregation-scope>
+<type>ANY</type>
+<value>0</value>
+</entity-aggregation-scope>
+<policy-condition>
+<type>leaf</type>
+<display-name>testFailed</display-name>
+<condition-value-type>ABSOLUTE</condition-value-type>
+<condition-value>2.0</condition-value>
+<operator>GREATER_THAN</operator>
+<condition-expression/>
+<use-active-baseline>false</use-active-baseline>
+<metric-expression>
+<type>leaf</type>
+<function-type>SUM</function-type>
+<value>0</value>
+<is-literal-expression>false</is-literal-expression>
+<display-name>null</display-name>
+<metric-definition>
+<type>ABSOLUTE_METRIC_SCOPE</type>
+<logical-metric-name>Application Infrastructure Performance|AppDynamicsVM|Custom Metrics|URL Monitor|NEW_MBBA_SRVADM|Pattern Matches|TestFailed|Count</logical-metric-name>
+<metric-name>Custom Metrics|URL Monitor|NEW_MBBA_SRVADM|Pattern Matches|TestFailed|Count</metric-name>
+<entity>
+<entity-type>APPLICATION_COMPONENT</entity-type>
+<application-component>AppDynamicsVM</application-component>
+</entity>
+</metric-definition>
+</metric-expression>
+</policy-condition>
+</critical-execution-criteria>
+<warning-execution-criteria>
+<entity-aggregation-scope>
+<type>ANY</type>
+<value>0</value>
+</entity-aggregation-scope>
+<policy-condition>
+<type>leaf</type>
+<display-name>statusNotSuccesful</display-name>
+<condition-value-type>ABSOLUTE</condition-value-type>
+<condition-value>15.0</condition-value>
+<operator>LESS_THAN</operator>
+<condition-expression/>
+<use-active-baseline>false</use-active-baseline>
+<metric-expression>
+<type>leaf</type>
+<function-type>SUM</function-type>
+<value>0</value>
+<is-literal-expression>false</is-literal-expression>
+<display-name>null</display-name>
+<metric-definition>
+<type>ABSOLUTE_METRIC_SCOPE</type>
+<logical-metric-name>Application Infrastructure Performance|AppDynamicsVM|Custom Metrics|URL Monitor|NEW_MBBA_SRVADM|Status</logical-metric-name>
+<metric-name>Custom Metrics|URL Monitor|NEW_MBBA_SRVADM|Status</metric-name>
+<entity>
+<entity-type>APPLICATION_COMPONENT</entity-type>
+<application-component>AppDynamicsVM</application-component>
+</entity>
+</metric-definition>
+</metric-expression>
+</policy-condition>
+</warning-execution-criteria>
+</health-rule>
+
+
+<health-rule>
+<name>Availability_new_mbba_tssadm</name>
+<type>OTHER</type>
+<description/>
+<enabled>true</enabled>
+<is-default>false</is-default>
+<always-enabled>true</always-enabled>
+<duration-min>20</duration-min>
+<wait-time-min>30</wait-time-min>
+<affected-entities-match-criteria>
+<other-affected-entities-match-criteria>
+<entity>
+<entity-type>APPLICATION</entity-type>
+</entity>
+</other-affected-entities-match-criteria>
+</affected-entities-match-criteria>
+<critical-execution-criteria>
+<entity-aggregation-scope>
+<type>ANY</type>
+<value>0</value>
+</entity-aggregation-scope>
+<policy-condition>
+<type>leaf</type>
+<display-name>testFailed</display-name>
+<condition-value-type>ABSOLUTE</condition-value-type>
+<condition-value>2.0</condition-value>
+<operator>GREATER_THAN</operator>
+<condition-expression/>
+<use-active-baseline>false</use-active-baseline>
+<metric-expression>
+<type>leaf</type>
+<function-type>SUM</function-type>
+<value>0</value>
+<is-literal-expression>false</is-literal-expression>
+<display-name>null</display-name>
+<metric-definition>
+<type>ABSOLUTE_METRIC_SCOPE</type>
+<logical-metric-name>Application Infrastructure Performance|AppDynamicsVM|Custom Metrics|URL Monitor|NEW_MBBA_TSSADM|Pattern Matches|TestFailed|Count</logical-metric-name>
+<metric-name>Custom Metrics|URL Monitor|NEW_MBBA_TSSADM|Pattern Matches|TestFailed|Count</metric-name>
+<entity>
+<entity-type>APPLICATION_COMPONENT</entity-type>
+<application-component>AppDynamicsVM</application-component>
+</entity>
+</metric-definition>
+</metric-expression>
+</policy-condition>
+</critical-execution-criteria>
+<warning-execution-criteria>
+<entity-aggregation-scope>
+<type>ANY</type>
+<value>0</value>
+</entity-aggregation-scope>
+<policy-condition>
+<type>leaf</type>
+<display-name>statusNotSuccesful</display-name>
+<condition-value-type>ABSOLUTE</condition-value-type>
+<condition-value>15.0</condition-value>
+<operator>LESS_THAN</operator>
+<condition-expression/>
+<use-active-baseline>false</use-active-baseline>
+<metric-expression>
+<type>leaf</type>
+<function-type>SUM</function-type>
+<value>0</value>
+<is-literal-expression>false</is-literal-expression>
+<display-name>null</display-name>
+<metric-definition>
+<type>ABSOLUTE_METRIC_SCOPE</type>
+<logical-metric-name>Application Infrastructure Performance|AppDynamicsVM|Custom Metrics|URL Monitor|NEW_MBBA_TSSADM|Status</logical-metric-name>
+<metric-name>Custom Metrics|URL Monitor|NEW_MBBA_TSSADM|Status</metric-name>
+<entity>
+<entity-type>APPLICATION_COMPONENT</entity-type>
+<application-component>AppDynamicsVM</application-component>
+</entity>
+</metric-definition>
+</metric-expression>
+</policy-condition>
+</warning-execution-criteria>
+</health-rule>
+
+
+<health-rule>
+<name>Availability_new_mbba_fbdadm</name>
+<type>OTHER</type>
+<description/>
+<enabled>true</enabled>
+<is-default>false</is-default>
+<always-enabled>true</always-enabled>
+<duration-min>20</duration-min>
+<wait-time-min>30</wait-time-min>
+<affected-entities-match-criteria>
+<other-affected-entities-match-criteria>
+<entity>
+<entity-type>APPLICATION</entity-type>
+</entity>
+</other-affected-entities-match-criteria>
+</affected-entities-match-criteria>
+<critical-execution-criteria>
+<entity-aggregation-scope>
+<type>ANY</type>
+<value>0</value>
+</entity-aggregation-scope>
+<policy-condition>
+<type>leaf</type>
+<display-name>testFailed</display-name>
+<condition-value-type>ABSOLUTE</condition-value-type>
+<condition-value>2.0</condition-value>
+<operator>GREATER_THAN</operator>
+<condition-expression/>
+<use-active-baseline>false</use-active-baseline>
+<metric-expression>
+<type>leaf</type>
+<function-type>SUM</function-type>
+<value>0</value>
+<is-literal-expression>false</is-literal-expression>
+<display-name>null</display-name>
+<metric-definition>
+<type>ABSOLUTE_METRIC_SCOPE</type>
+<logical-metric-name>Application Infrastructure Performance|AppDynamicsVM|Custom Metrics|URL Monitor|NEW_MBBA_FBDADM|Pattern Matches|TestFailed|Count</logical-metric-name>
+<metric-name>Custom Metrics|URL Monitor|NEW_MBBA_FBDADM|Pattern Matches|TestFailed|Count</metric-name>
+<entity>
+<entity-type>APPLICATION_COMPONENT</entity-type>
+<application-component>AppDynamicsVM</application-component>
+</entity>
+</metric-definition>
+</metric-expression>
+</policy-condition>
+</critical-execution-criteria>
+<warning-execution-criteria>
+<entity-aggregation-scope>
+<type>ANY</type>
+<value>0</value>
+</entity-aggregation-scope>
+<policy-condition>
+<type>leaf</type>
+<display-name>statusNotSuccesful</display-name>
+<condition-value-type>ABSOLUTE</condition-value-type>
+<condition-value>15.0</condition-value>
+<operator>LESS_THAN</operator>
+<condition-expression/>
+<use-active-baseline>false</use-active-baseline>
+<metric-expression>
+<type>leaf</type>
+<function-type>SUM</function-type>
+<value>0</value>
+<is-literal-expression>false</is-literal-expression>
+<display-name>null</display-name>
+<metric-definition>
+<type>ABSOLUTE_METRIC_SCOPE</type>
+<logical-metric-name>Application Infrastructure Performance|AppDynamicsVM|Custom Metrics|URL Monitor|NEW_MBBA_FBDADM|Status</logical-metric-name>
+<metric-name>Custom Metrics|URL Monitor|NEW_MBBA_FBDADM|Status</metric-name>
+<entity>
+<entity-type>APPLICATION_COMPONENT</entity-type>
+<application-component>AppDynamicsVM</application-component>
+</entity>
+</metric-definition>
+</metric-expression>
+</policy-condition>
+</warning-execution-criteria>
+</health-rule>
+
+
+<health-rule>
+<name>Availability_new_mbba_pupadm</name>
+<type>OTHER</type>
+<description/>
+<enabled>true</enabled>
+<is-default>false</is-default>
+<always-enabled>true</always-enabled>
+<duration-min>20</duration-min>
+<wait-time-min>30</wait-time-min>
+<affected-entities-match-criteria>
+<other-affected-entities-match-criteria>
+<entity>
+<entity-type>APPLICATION</entity-type>
+</entity>
+</other-affected-entities-match-criteria>
+</affected-entities-match-criteria>
+<critical-execution-criteria>
+<entity-aggregation-scope>
+<type>ANY</type>
+<value>0</value>
+</entity-aggregation-scope>
+<policy-condition>
+<type>leaf</type>
+<display-name>testFailed</display-name>
+<condition-value-type>ABSOLUTE</condition-value-type>
+<condition-value>2.0</condition-value>
+<operator>GREATER_THAN</operator>
+<condition-expression/>
+<use-active-baseline>false</use-active-baseline>
+<metric-expression>
+<type>leaf</type>
+<function-type>SUM</function-type>
+<value>0</value>
+<is-literal-expression>false</is-literal-expression>
+<display-name>null</display-name>
+<metric-definition>
+<type>ABSOLUTE_METRIC_SCOPE</type>
+<logical-metric-name>Application Infrastructure Performance|AppDynamicsVM|Custom Metrics|URL Monitor|NEW_MBBA_PUPADM|Pattern Matches|TestFailed|Count</logical-metric-name>
+<metric-name>Custom Metrics|URL Monitor|NEW_MBBA_PUPADM|Pattern Matches|TestFailed|Count</metric-name>
+<entity>
+<entity-type>APPLICATION_COMPONENT</entity-type>
+<application-component>AppDynamicsVM</application-component>
+</entity>
+</metric-definition>
+</metric-expression>
+</policy-condition>
+</critical-execution-criteria>
+<warning-execution-criteria>
+<entity-aggregation-scope>
+<type>ANY</type>
+<value>0</value>
+</entity-aggregation-scope>
+<policy-condition>
+<type>leaf</type>
+<display-name>statusNotSuccesful</display-name>
+<condition-value-type>ABSOLUTE</condition-value-type>
+<condition-value>15.0</condition-value>
+<operator>LESS_THAN</operator>
+<condition-expression/>
+<use-active-baseline>false</use-active-baseline>
+<metric-expression>
+<type>leaf</type>
+<function-type>SUM</function-type>
+<value>0</value>
+<is-literal-expression>false</is-literal-expression>
+<display-name>null</display-name>
+<metric-definition>
+<type>ABSOLUTE_METRIC_SCOPE</type>
+<logical-metric-name>Application Infrastructure Performance|AppDynamicsVM|Custom Metrics|URL Monitor|NEW_MBBA_PUPADM|Status</logical-metric-name>
+<metric-name>Custom Metrics|URL Monitor|NEW_MBBA_PUPADM|Status</metric-name>
+<entity>
+<entity-type>APPLICATION_COMPONENT</entity-type>
+<application-component>AppDynamicsVM</application-component>
+</entity>
+</metric-definition>
+</metric-expression>
+</policy-condition>
+</warning-execution-criteria>
+</health-rule>
+
+
+<health-rule>
+<name>Availability_new_mbbb_echo</name>
+<type>OTHER</type>
+<description/>
+<enabled>true</enabled>
+<is-default>false</is-default>
+<always-enabled>true</always-enabled>
+<duration-min>20</duration-min>
+<wait-time-min>30</wait-time-min>
+<affected-entities-match-criteria>
+<other-affected-entities-match-criteria>
+<entity>
+<entity-type>APPLICATION</entity-type>
+</entity>
+</other-affected-entities-match-criteria>
+</affected-entities-match-criteria>
+<critical-execution-criteria>
+<entity-aggregation-scope>
+<type>ANY</type>
+<value>0</value>
+</entity-aggregation-scope>
+<policy-condition>
+<type>leaf</type>
+<display-name>testFailed</display-name>
+<condition-value-type>ABSOLUTE</condition-value-type>
+<condition-value>2.0</condition-value>
+<operator>GREATER_THAN</operator>
+<condition-expression/>
+<use-active-baseline>false</use-active-baseline>
+<metric-expression>
+<type>leaf</type>
+<function-type>SUM</function-type>
+<value>0</value>
+<is-literal-expression>false</is-literal-expression>
+<display-name>null</display-name>
+<metric-definition>
+<type>ABSOLUTE_METRIC_SCOPE</type>
+<logical-metric-name>Application Infrastructure Performance|AppDynamicsVM|Custom Metrics|URL Monitor|NEW_MBBB_ECHO|Pattern Matches|TestFailed|Count</logical-metric-name>
+<metric-name>Custom Metrics|URL Monitor|NEW_MBBB_ECHO|Pattern Matches|TestFailed|Count</metric-name>
+<entity>
+<entity-type>APPLICATION_COMPONENT</entity-type>
+<application-component>AppDynamicsVM</application-component>
+</entity>
+</metric-definition>
+</metric-expression>
+</policy-condition>
+</critical-execution-criteria>
+<warning-execution-criteria>
+<entity-aggregation-scope>
+<type>ANY</type>
+<value>0</value>
+</entity-aggregation-scope>
+<policy-condition>
+<type>leaf</type>
+<display-name>statusNotSuccesful</display-name>
+<condition-value-type>ABSOLUTE</condition-value-type>
+<condition-value>15.0</condition-value>
+<operator>LESS_THAN</operator>
+<condition-expression/>
+<use-active-baseline>false</use-active-baseline>
+<metric-expression>
+<type>leaf</type>
+<function-type>SUM</function-type>
+<value>0</value>
+<is-literal-expression>false</is-literal-expression>
+<display-name>null</display-name>
+<metric-definition>
+<type>ABSOLUTE_METRIC_SCOPE</type>
+<logical-metric-name>Application Infrastructure Performance|AppDynamicsVM|Custom Metrics|URL Monitor|NEW_MBBB_ECHO|Status</logical-metric-name>
+<metric-name>Custom Metrics|URL Monitor|NEW_MBBB_ECHO|Status</metric-name>
+<entity>
+<entity-type>APPLICATION_COMPONENT</entity-type>
+<application-component>AppDynamicsVM</application-component>
+</entity>
+</metric-definition>
+</metric-expression>
+</policy-condition>
+</warning-execution-criteria>
+</health-rule>
+
+
+<health-rule>
+<name>Availability_new_mbbb_news</name>
+<type>OTHER</type>
+<description/>
+<enabled>true</enabled>
+<is-default>false</is-default>
+<always-enabled>true</always-enabled>
+<duration-min>20</duration-min>
+<wait-time-min>30</wait-time-min>
+<affected-entities-match-criteria>
+<other-affected-entities-match-criteria>
+<entity>
+<entity-type>APPLICATION</entity-type>
+</entity>
+</other-affected-entities-match-criteria>
+</affected-entities-match-criteria>
+<critical-execution-criteria>
+<entity-aggregation-scope>
+<type>ANY</type>
+<value>0</value>
+</entity-aggregation-scope>
+<policy-condition>
+<type>leaf</type>
+<display-name>testFailed</display-name>
+<condition-value-type>ABSOLUTE</condition-value-type>
+<condition-value>2.0</condition-value>
+<operator>GREATER_THAN</operator>
+<condition-expression/>
+<use-active-baseline>false</use-active-baseline>
+<metric-expression>
+<type>leaf</type>
+<function-type>SUM</function-type>
+<value>0</value>
+<is-literal-expression>false</is-literal-expression>
+<display-name>null</display-name>
+<metric-definition>
+<type>ABSOLUTE_METRIC_SCOPE</type>
+<logical-metric-name>Application Infrastructure Performance|AppDynamicsVM|Custom Metrics|URL Monitor|NEW_MBBB_NEWS|Pattern Matches|TestFailed|Count</logical-metric-name>
+<metric-name>Custom Metrics|URL Monitor|NEW_MBBB_NEWS|Pattern Matches|TestFailed|Count</metric-name>
+<entity>
+<entity-type>APPLICATION_COMPONENT</entity-type>
+<application-component>AppDynamicsVM</application-component>
+</entity>
+</metric-definition>
+</metric-expression>
+</policy-condition>
+</critical-execution-criteria>
+<warning-execution-criteria>
+<entity-aggregation-scope>
+<type>ANY</type>
+<value>0</value>
+</entity-aggregation-scope>
+<policy-condition>
+<type>leaf</type>
+<display-name>statusNotSuccesful</display-name>
+<condition-value-type>ABSOLUTE</condition-value-type>
+<condition-value>15.0</condition-value>
+<operator>LESS_THAN</operator>
+<condition-expression/>
+<use-active-baseline>false</use-active-baseline>
+<metric-expression>
+<type>leaf</type>
+<function-type>SUM</function-type>
+<value>0</value>
+<is-literal-expression>false</is-literal-expression>
+<display-name>null</display-name>
+<metric-definition>
+<type>ABSOLUTE_METRIC_SCOPE</type>
+<logical-metric-name>Application Infrastructure Performance|AppDynamicsVM|Custom Metrics|URL Monitor|NEW_MBBB_NEWS|Status</logical-metric-name>
+<metric-name>Custom Metrics|URL Monitor|NEW_MBBB_NEWS|Status</metric-name>
+<entity>
+<entity-type>APPLICATION_COMPONENT</entity-type>
+<application-component>AppDynamicsVM</application-component>
+</entity>
+</metric-definition>
+</metric-expression>
+</policy-condition>
+</warning-execution-criteria>
+</health-rule>
+
+
+<health-rule>
+<name>Availability_new_mbbb_fpi</name>
+<type>OTHER</type>
+<description/>
+<enabled>true</enabled>
+<is-default>false</is-default>
+<always-enabled>true</always-enabled>
+<duration-min>20</duration-min>
+<wait-time-min>30</wait-time-min>
+<affected-entities-match-criteria>
+<other-affected-entities-match-criteria>
+<entity>
+<entity-type>APPLICATION</entity-type>
+</entity>
+</other-affected-entities-match-criteria>
+</affected-entities-match-criteria>
+<critical-execution-criteria>
+<entity-aggregation-scope>
+<type>ANY</type>
+<value>0</value>
+</entity-aggregation-scope>
+<policy-condition>
+<type>leaf</type>
+<display-name>testFailed</display-name>
+<condition-value-type>ABSOLUTE</condition-value-type>
+<condition-value>2.0</condition-value>
+<operator>GREATER_THAN</operator>
+<condition-expression/>
+<use-active-baseline>false</use-active-baseline>
+<metric-expression>
+<type>leaf</type>
+<function-type>SUM</function-type>
+<value>0</value>
+<is-literal-expression>false</is-literal-expression>
+<display-name>null</display-name>
+<metric-definition>
+<type>ABSOLUTE_METRIC_SCOPE</type>
+<logical-metric-name>Application Infrastructure Performance|AppDynamicsVM|Custom Metrics|URL Monitor|NEW_MBBB_FPI|Pattern Matches|TestFailed|Count</logical-metric-name>
+<metric-name>Custom Metrics|URL Monitor|NEW_MBBB_FPI|Pattern Matches|TestFailed|Count</metric-name>
+<entity>
+<entity-type>APPLICATION_COMPONENT</entity-type>
+<application-component>AppDynamicsVM</application-component>
+</entity>
+</metric-definition>
+</metric-expression>
+</policy-condition>
+</critical-execution-criteria>
+<warning-execution-criteria>
+<entity-aggregation-scope>
+<type>ANY</type>
+<value>0</value>
+</entity-aggregation-scope>
+<policy-condition>
+<type>leaf</type>
+<display-name>statusNotSuccesful</display-name>
+<condition-value-type>ABSOLUTE</condition-value-type>
+<condition-value>15.0</condition-value>
+<operator>LESS_THAN</operator>
+<condition-expression/>
+<use-active-baseline>false</use-active-baseline>
+<metric-expression>
+<type>leaf</type>
+<function-type>SUM</function-type>
+<value>0</value>
+<is-literal-expression>false</is-literal-expression>
+<display-name>null</display-name>
+<metric-definition>
+<type>ABSOLUTE_METRIC_SCOPE</type>
+<logical-metric-name>Application Infrastructure Performance|AppDynamicsVM|Custom Metrics|URL Monitor|NEW_MBBB_FPI|Status</logical-metric-name>
+<metric-name>Custom Metrics|URL Monitor|NEW_MBBB_FPI|Status</metric-name>
+<entity>
+<entity-type>APPLICATION_COMPONENT</entity-type>
+<application-component>AppDynamicsVM</application-component>
+</entity>
+</metric-definition>
+</metric-expression>
+</policy-condition>
+</warning-execution-criteria>
+</health-rule>
+
+
+<health-rule>
+<name>Availability_new_mbbb_cityev</name>
+<type>OTHER</type>
+<description/>
+<enabled>true</enabled>
+<is-default>false</is-default>
+<always-enabled>true</always-enabled>
+<duration-min>20</duration-min>
+<wait-time-min>30</wait-time-min>
+<affected-entities-match-criteria>
+<other-affected-entities-match-criteria>
+<entity>
+<entity-type>APPLICATION</entity-type>
+</entity>
+</other-affected-entities-match-criteria>
+</affected-entities-match-criteria>
+<critical-execution-criteria>
+<entity-aggregation-scope>
+<type>ANY</type>
+<value>0</value>
+</entity-aggregation-scope>
+<policy-condition>
+<type>leaf</type>
+<display-name>testFailed</display-name>
+<condition-value-type>ABSOLUTE</condition-value-type>
+<condition-value>2.0</condition-value>
+<operator>GREATER_THAN</operator>
+<condition-expression/>
+<use-active-baseline>false</use-active-baseline>
+<metric-expression>
+<type>leaf</type>
+<function-type>SUM</function-type>
+<value>0</value>
+<is-literal-expression>false</is-literal-expression>
+<display-name>null</display-name>
+<metric-definition>
+<type>ABSOLUTE_METRIC_SCOPE</type>
+<logical-metric-name>Application Infrastructure Performance|AppDynamicsVM|Custom Metrics|URL Monitor|NEW_MBBB_CITYEV|Pattern Matches|TestFailed|Count</logical-metric-name>
+<metric-name>Custom Metrics|URL Monitor|NEW_MBBB_CITYEV|Pattern Matches|TestFailed|Count</metric-name>
+<entity>
+<entity-type>APPLICATION_COMPONENT</entity-type>
+<application-component>AppDynamicsVM</application-component>
+</entity>
+</metric-definition>
+</metric-expression>
+</policy-condition>
+</critical-execution-criteria>
+<warning-execution-criteria>
+<entity-aggregation-scope>
+<type>ANY</type>
+<value>0</value>
+</entity-aggregation-scope>
+<policy-condition>
+<type>leaf</type>
+<display-name>statusNotSuccesful</display-name>
+<condition-value-type>ABSOLUTE</condition-value-type>
+<condition-value>15.0</condition-value>
+<operator>LESS_THAN</operator>
+<condition-expression/>
+<use-active-baseline>false</use-active-baseline>
+<metric-expression>
+<type>leaf</type>
+<function-type>SUM</function-type>
+<value>0</value>
+<is-literal-expression>false</is-literal-expression>
+<display-name>null</display-name>
+<metric-definition>
+<type>ABSOLUTE_METRIC_SCOPE</type>
+<logical-metric-name>Application Infrastructure Performance|AppDynamicsVM|Custom Metrics|URL Monitor|NEW_MBBB_CITYEV|Status</logical-metric-name>
+<metric-name>Custom Metrics|URL Monitor|NEW_MBBB_CITYEV|Status</metric-name>
+<entity>
+<entity-type>APPLICATION_COMPONENT</entity-type>
+<application-component>AppDynamicsVM</application-component>
+</entity>
+</metric-definition>
+</metric-expression>
+</policy-condition>
+</warning-execution-criteria>
+</health-rule>
+
+
+<health-rule>
+<name>Availability_new_mbbb_pair</name>
+<type>OTHER</type>
+<description/>
+<enabled>true</enabled>
+<is-default>false</is-default>
+<always-enabled>true</always-enabled>
+<duration-min>20</duration-min>
+<wait-time-min>30</wait-time-min>
+<affected-entities-match-criteria>
+<other-affected-entities-match-criteria>
+<entity>
+<entity-type>APPLICATION</entity-type>
+</entity>
+</other-affected-entities-match-criteria>
+</affected-entities-match-criteria>
+<critical-execution-criteria>
+<entity-aggregation-scope>
+<type>ANY</type>
+<value>0</value>
+</entity-aggregation-scope>
+<policy-condition>
+<type>leaf</type>
+<display-name>testFailed</display-name>
+<condition-value-type>ABSOLUTE</condition-value-type>
+<condition-value>2.0</condition-value>
+<operator>GREATER_THAN</operator>
+<condition-expression/>
+<use-active-baseline>false</use-active-baseline>
+<metric-expression>
+<type>leaf</type>
+<function-type>SUM</function-type>
+<value>0</value>
+<is-literal-expression>false</is-literal-expression>
+<display-name>null</display-name>
+<metric-definition>
+<type>ABSOLUTE_METRIC_SCOPE</type>
+<logical-metric-name>Application Infrastructure Performance|AppDynamicsVM|Custom Metrics|URL Monitor|NEW_MBBB_PAIR|Pattern Matches|TestFailed|Count</logical-metric-name>
+<metric-name>Custom Metrics|URL Monitor|NEW_MBBB_PAIR|Pattern Matches|TestFailed|Count</metric-name>
+<entity>
+<entity-type>APPLICATION_COMPONENT</entity-type>
+<application-component>AppDynamicsVM</application-component>
+</entity>
+</metric-definition>
+</metric-expression>
+</policy-condition>
+</critical-execution-criteria>
+<warning-execution-criteria>
+<entity-aggregation-scope>
+<type>ANY</type>
+<value>0</value>
+</entity-aggregation-scope>
+<policy-condition>
+<type>leaf</type>
+<display-name>statusNotSuccesful</display-name>
+<condition-value-type>ABSOLUTE</condition-value-type>
+<condition-value>15.0</condition-value>
+<operator>LESS_THAN</operator>
+<condition-expression/>
+<use-active-baseline>false</use-active-baseline>
+<metric-expression>
+<type>leaf</type>
+<function-type>SUM</function-type>
+<value>0</value>
+<is-literal-expression>false</is-literal-expression>
+<display-name>null</display-name>
+<metric-definition>
+<type>ABSOLUTE_METRIC_SCOPE</type>
+<logical-metric-name>Application Infrastructure Performance|AppDynamicsVM|Custom Metrics|URL Monitor|NEW_MBBB_PAIR|Status</logical-metric-name>
+<metric-name>Custom Metrics|URL Monitor|NEW_MBBB_PAIR|Status</metric-name>
+<entity>
+<entity-type>APPLICATION_COMPONENT</entity-type>
+<application-component>AppDynamicsVM</application-component>
+</entity>
+</metric-definition>
+</metric-expression>
+</policy-condition>
+</warning-execution-criteria>
+</health-rule>
+
+
+<health-rule>
+<name>Availability_new_mbbb_park</name>
+<type>OTHER</type>
+<description/>
+<enabled>true</enabled>
+<is-default>false</is-default>
+<always-enabled>true</always-enabled>
+<duration-min>20</duration-min>
+<wait-time-min>30</wait-time-min>
+<affected-entities-match-criteria>
+<other-affected-entities-match-criteria>
+<entity>
+<entity-type>APPLICATION</entity-type>
+</entity>
+</other-affected-entities-match-criteria>
+</affected-entities-match-criteria>
+<critical-execution-criteria>
+<entity-aggregation-scope>
+<type>ANY</type>
+<value>0</value>
+</entity-aggregation-scope>
+<policy-condition>
+<type>leaf</type>
+<display-name>testFailed</display-name>
+<condition-value-type>ABSOLUTE</condition-value-type>
+<condition-value>2.0</condition-value>
+<operator>GREATER_THAN</operator>
+<condition-expression/>
+<use-active-baseline>false</use-active-baseline>
+<metric-expression>
+<type>leaf</type>
+<function-type>SUM</function-type>
+<value>0</value>
+<is-literal-expression>false</is-literal-expression>
+<display-name>null</display-name>
+<metric-definition>
+<type>ABSOLUTE_METRIC_SCOPE</type>
+<logical-metric-name>Application Infrastructure Performance|AppDynamicsVM|Custom Metrics|URL Monitor|NEW_MBBB_PARK|Pattern Matches|TestFailed|Count</logical-metric-name>
+<metric-name>Custom Metrics|URL Monitor|NEW_MBBB_PARK|Pattern Matches|TestFailed|Count</metric-name>
+<entity>
+<entity-type>APPLICATION_COMPONENT</entity-type>
+<application-component>AppDynamicsVM</application-component>
+</entity>
+</metric-definition>
+</metric-expression>
+</policy-condition>
+</critical-execution-criteria>
+<warning-execution-criteria>
+<entity-aggregation-scope>
+<type>ANY</type>
+<value>0</value>
+</entity-aggregation-scope>
+<policy-condition>
+<type>leaf</type>
+<display-name>statusNotSuccesful</display-name>
+<condition-value-type>ABSOLUTE</condition-value-type>
+<condition-value>15.0</condition-value>
+<operator>LESS_THAN</operator>
+<condition-expression/>
+<use-active-baseline>false</use-active-baseline>
+<metric-expression>
+<type>leaf</type>
+<function-type>SUM</function-type>
+<value>0</value>
+<is-literal-expression>false</is-literal-expression>
+<display-name>null</display-name>
+<metric-definition>
+<type>ABSOLUTE_METRIC_SCOPE</type>
+<logical-metric-name>Application Infrastructure Performance|AppDynamicsVM|Custom Metrics|URL Monitor|NEW_MBBB_PARK|Status</logical-metric-name>
+<metric-name>Custom Metrics|URL Monitor|NEW_MBBB_PARK|Status</metric-name>
+<entity>
+<entity-type>APPLICATION_COMPONENT</entity-type>
+<application-component>AppDynamicsVM</application-component>
+</entity>
+</metric-definition>
+</metric-expression>
+</policy-condition>
+</warning-execution-criteria>
+</health-rule>
+
+
+<health-rule>
+<name>Availability_new_mbbb_countr</name>
+<type>OTHER</type>
+<description/>
+<enabled>true</enabled>
+<is-default>false</is-default>
+<always-enabled>true</always-enabled>
+<duration-min>20</duration-min>
+<wait-time-min>30</wait-time-min>
+<affected-entities-match-criteria>
+<other-affected-entities-match-criteria>
+<entity>
+<entity-type>APPLICATION</entity-type>
+</entity>
+</other-affected-entities-match-criteria>
+</affected-entities-match-criteria>
+<critical-execution-criteria>
+<entity-aggregation-scope>
+<type>ANY</type>
+<value>0</value>
+</entity-aggregation-scope>
+<policy-condition>
+<type>leaf</type>
+<display-name>testFailed</display-name>
+<condition-value-type>ABSOLUTE</condition-value-type>
+<condition-value>2.0</condition-value>
+<operator>GREATER_THAN</operator>
+<condition-expression/>
+<use-active-baseline>false</use-active-baseline>
+<metric-expression>
+<type>leaf</type>
+<function-type>SUM</function-type>
+<value>0</value>
+<is-literal-expression>false</is-literal-expression>
+<display-name>null</display-name>
+<metric-definition>
+<type>ABSOLUTE_METRIC_SCOPE</type>
+<logical-metric-name>Application Infrastructure Performance|AppDynamicsVM|Custom Metrics|URL Monitor|NEW_MBBB_COUNTR|Pattern Matches|TestFailed|Count</logical-metric-name>
+<metric-name>Custom Metrics|URL Monitor|NEW_MBBB_COUNTR|Pattern Matches|TestFailed|Count</metric-name>
+<entity>
+<entity-type>APPLICATION_COMPONENT</entity-type>
+<application-component>AppDynamicsVM</application-component>
+</entity>
+</metric-definition>
+</metric-expression>
+</policy-condition>
+</critical-execution-criteria>
+<warning-execution-criteria>
+<entity-aggregation-scope>
+<type>ANY</type>
+<value>0</value>
+</entity-aggregation-scope>
+<policy-condition>
+<type>leaf</type>
+<display-name>statusNotSuccesful</display-name>
+<condition-value-type>ABSOLUTE</condition-value-type>
+<condition-value>15.0</condition-value>
+<operator>LESS_THAN</operator>
+<condition-expression/>
+<use-active-baseline>false</use-active-baseline>
+<metric-expression>
+<type>leaf</type>
+<function-type>SUM</function-type>
+<value>0</value>
+<is-literal-expression>false</is-literal-expression>
+<display-name>null</display-name>
+<metric-definition>
+<type>ABSOLUTE_METRIC_SCOPE</type>
+<logical-metric-name>Application Infrastructure Performance|AppDynamicsVM|Custom Metrics|URL Monitor|NEW_MBBB_COUNTR|Status</logical-metric-name>
+<metric-name>Custom Metrics|URL Monitor|NEW_MBBB_COUNTR|Status</metric-name>
+<entity>
+<entity-type>APPLICATION_COMPONENT</entity-type>
+<application-component>AppDynamicsVM</application-component>
+</entity>
+</metric-definition>
+</metric-expression>
+</policy-condition>
+</warning-execution-criteria>
+</health-rule>
+
+
+<health-rule>
+<name>Availability_new_mbbb_flight</name>
+<type>OTHER</type>
+<description/>
+<enabled>true</enabled>
+<is-default>false</is-default>
+<always-enabled>true</always-enabled>
+<duration-min>20</duration-min>
+<wait-time-min>30</wait-time-min>
+<affected-entities-match-criteria>
+<other-affected-entities-match-criteria>
+<entity>
+<entity-type>APPLICATION</entity-type>
+</entity>
+</other-affected-entities-match-criteria>
+</affected-entities-match-criteria>
+<critical-execution-criteria>
+<entity-aggregation-scope>
+<type>ANY</type>
+<value>0</value>
+</entity-aggregation-scope>
+<policy-condition>
+<type>leaf</type>
+<display-name>testFailed</display-name>
+<condition-value-type>ABSOLUTE</condition-value-type>
+<condition-value>2.0</condition-value>
+<operator>GREATER_THAN</operator>
+<condition-expression/>
+<use-active-baseline>false</use-active-baseline>
+<metric-expression>
+<type>leaf</type>
+<function-type>SUM</function-type>
+<value>0</value>
+<is-literal-expression>false</is-literal-expression>
+<display-name>null</display-name>
+<metric-definition>
+<type>ABSOLUTE_METRIC_SCOPE</type>
+<logical-metric-name>Application Infrastructure Performance|AppDynamicsVM|Custom Metrics|URL Monitor|NEW_MBBB_FLIGHT|Pattern Matches|TestFailed|Count</logical-metric-name>
+<metric-name>Custom Metrics|URL Monitor|NEW_MBBB_FLIGHT|Pattern Matches|TestFailed|Count</metric-name>
+<entity>
+<entity-type>APPLICATION_COMPONENT</entity-type>
+<application-component>AppDynamicsVM</application-component>
+</entity>
+</metric-definition>
+</metric-expression>
+</policy-condition>
+</critical-execution-criteria>
+<warning-execution-criteria>
+<entity-aggregation-scope>
+<type>ANY</type>
+<value>0</value>
+</entity-aggregation-scope>
+<policy-condition>
+<type>leaf</type>
+<display-name>statusNotSuccesful</display-name>
+<condition-value-type>ABSOLUTE</condition-value-type>
+<condition-value>15.0</condition-value>
+<operator>LESS_THAN</operator>
+<condition-expression/>
+<use-active-baseline>false</use-active-baseline>
+<metric-expression>
+<type>leaf</type>
+<function-type>SUM</function-type>
+<value>0</value>
+<is-literal-expression>false</is-literal-expression>
+<display-name>null</display-name>
+<metric-definition>
+<type>ABSOLUTE_METRIC_SCOPE</type>
+<logical-metric-name>Application Infrastructure Performance|AppDynamicsVM|Custom Metrics|URL Monitor|NEW_MBBB_FLIGHT|Status</logical-metric-name>
+<metric-name>Custom Metrics|URL Monitor|NEW_MBBB_FLIGHT|Status</metric-name>
+<entity>
+<entity-type>APPLICATION_COMPONENT</entity-type>
+<application-component>AppDynamicsVM</application-component>
+</entity>
+</metric-definition>
+</metric-expression>
+</policy-condition>
+</warning-execution-criteria>
+</health-rule>
+
+
+<health-rule>
+<name>Availability_new_mbbb_destim</name>
+<type>OTHER</type>
+<description/>
+<enabled>true</enabled>
+<is-default>false</is-default>
+<always-enabled>true</always-enabled>
+<duration-min>20</duration-min>
+<wait-time-min>30</wait-time-min>
+<affected-entities-match-criteria>
+<other-affected-entities-match-criteria>
+<entity>
+<entity-type>APPLICATION</entity-type>
+</entity>
+</other-affected-entities-match-criteria>
+</affected-entities-match-criteria>
+<critical-execution-criteria>
+<entity-aggregation-scope>
+<type>ANY</type>
+<value>0</value>
+</entity-aggregation-scope>
+<policy-condition>
+<type>leaf</type>
+<display-name>testFailed</display-name>
+<condition-value-type>ABSOLUTE</condition-value-type>
+<condition-value>2.0</condition-value>
+<operator>GREATER_THAN</operator>
+<condition-expression/>
+<use-active-baseline>false</use-active-baseline>
+<metric-expression>
+<type>leaf</type>
+<function-type>SUM</function-type>
+<value>0</value>
+<is-literal-expression>false</is-literal-expression>
+<display-name>null</display-name>
+<metric-definition>
+<type>ABSOLUTE_METRIC_SCOPE</type>
+<logical-metric-name>Application Infrastructure Performance|AppDynamicsVM|Custom Metrics|URL Monitor|NEW_MBBB_DESTIM|Pattern Matches|TestFailed|Count</logical-metric-name>
+<metric-name>Custom Metrics|URL Monitor|NEW_MBBB_DESTIM|Pattern Matches|TestFailed|Count</metric-name>
+<entity>
+<entity-type>APPLICATION_COMPONENT</entity-type>
+<application-component>AppDynamicsVM</application-component>
+</entity>
+</metric-definition>
+</metric-expression>
+</policy-condition>
+</critical-execution-criteria>
+<warning-execution-criteria>
+<entity-aggregation-scope>
+<type>ANY</type>
+<value>0</value>
+</entity-aggregation-scope>
+<policy-condition>
+<type>leaf</type>
+<display-name>statusNotSuccesful</display-name>
+<condition-value-type>ABSOLUTE</condition-value-type>
+<condition-value>15.0</condition-value>
+<operator>LESS_THAN</operator>
+<condition-expression/>
+<use-active-baseline>false</use-active-baseline>
+<metric-expression>
+<type>leaf</type>
+<function-type>SUM</function-type>
+<value>0</value>
+<is-literal-expression>false</is-literal-expression>
+<display-name>null</display-name>
+<metric-definition>
+<type>ABSOLUTE_METRIC_SCOPE</type>
+<logical-metric-name>Application Infrastructure Performance|AppDynamicsVM|Custom Metrics|URL Monitor|NEW_MBBB_DESTIM|Status</logical-metric-name>
+<metric-name>Custom Metrics|URL Monitor|NEW_MBBB_DESTIM|Status</metric-name>
+<entity>
+<entity-type>APPLICATION_COMPONENT</entity-type>
+<application-component>AppDynamicsVM</application-component>
+</entity>
+</metric-definition>
+</metric-expression>
+</policy-condition>
+</warning-execution-criteria>
+</health-rule>
+
+
+<health-rule>
+<name>Availability_new_mbbb_cf</name>
+<type>OTHER</type>
+<description/>
+<enabled>true</enabled>
+<is-default>false</is-default>
+<always-enabled>true</always-enabled>
+<duration-min>20</duration-min>
+<wait-time-min>30</wait-time-min>
+<affected-entities-match-criteria>
+<other-affected-entities-match-criteria>
+<entity>
+<entity-type>APPLICATION</entity-type>
+</entity>
+</other-affected-entities-match-criteria>
+</affected-entities-match-criteria>
+<critical-execution-criteria>
+<entity-aggregation-scope>
+<type>ANY</type>
+<value>0</value>
+</entity-aggregation-scope>
+<policy-condition>
+<type>leaf</type>
+<display-name>testFailed</display-name>
+<condition-value-type>ABSOLUTE</condition-value-type>
+<condition-value>2.0</condition-value>
+<operator>GREATER_THAN</operator>
+<condition-expression/>
+<use-active-baseline>false</use-active-baseline>
+<metric-expression>
+<type>leaf</type>
+<function-type>SUM</function-type>
+<value>0</value>
+<is-literal-expression>false</is-literal-expression>
+<display-name>null</display-name>
+<metric-definition>
+<type>ABSOLUTE_METRIC_SCOPE</type>
+<logical-metric-name>Application Infrastructure Performance|AppDynamicsVM|Custom Metrics|URL Monitor|NEW_MBBB_CF|Pattern Matches|TestFailed|Count</logical-metric-name>
+<metric-name>Custom Metrics|URL Monitor|NEW_MBBB_CF|Pattern Matches|TestFailed|Count</metric-name>
+<entity>
+<entity-type>APPLICATION_COMPONENT</entity-type>
+<application-component>AppDynamicsVM</application-component>
+</entity>
+</metric-definition>
+</metric-expression>
+</policy-condition>
+</critical-execution-criteria>
+<warning-execution-criteria>
+<entity-aggregation-scope>
+<type>ANY</type>
+<value>0</value>
+</entity-aggregation-scope>
+<policy-condition>
+<type>leaf</type>
+<display-name>statusNotSuccesful</display-name>
+<condition-value-type>ABSOLUTE</condition-value-type>
+<condition-value>15.0</condition-value>
+<operator>LESS_THAN</operator>
+<condition-expression/>
+<use-active-baseline>false</use-active-baseline>
+<metric-expression>
+<type>leaf</type>
+<function-type>SUM</function-type>
+<value>0</value>
+<is-literal-expression>false</is-literal-expression>
+<display-name>null</display-name>
+<metric-definition>
+<type>ABSOLUTE_METRIC_SCOPE</type>
+<logical-metric-name>Application Infrastructure Performance|AppDynamicsVM|Custom Metrics|URL Monitor|NEW_MBBB_CF|Status</logical-metric-name>
+<metric-name>Custom Metrics|URL Monitor|NEW_MBBB_CF|Status</metric-name>
+<entity>
+<entity-type>APPLICATION_COMPONENT</entity-type>
+<application-component>AppDynamicsVM</application-component>
+</entity>
+</metric-definition>
+</metric-expression>
+</policy-condition>
+</warning-execution-criteria>
+</health-rule>
+
+
+<health-rule>
+<name>Availability_new_mbbb_opr</name>
+<type>OTHER</type>
+<description/>
+<enabled>true</enabled>
+<is-default>false</is-default>
+<always-enabled>true</always-enabled>
+<duration-min>20</duration-min>
+<wait-time-min>30</wait-time-min>
+<affected-entities-match-criteria>
+<other-affected-entities-match-criteria>
+<entity>
+<entity-type>APPLICATION</entity-type>
+</entity>
+</other-affected-entities-match-criteria>
+</affected-entities-match-criteria>
+<critical-execution-criteria>
+<entity-aggregation-scope>
+<type>ANY</type>
+<value>0</value>
+</entity-aggregation-scope>
+<policy-condition>
+<type>leaf</type>
+<display-name>testFailed</display-name>
+<condition-value-type>ABSOLUTE</condition-value-type>
+<condition-value>2.0</condition-value>
+<operator>GREATER_THAN</operator>
+<condition-expression/>
+<use-active-baseline>false</use-active-baseline>
+<metric-expression>
+<type>leaf</type>
+<function-type>SUM</function-type>
+<value>0</value>
+<is-literal-expression>false</is-literal-expression>
+<display-name>null</display-name>
+<metric-definition>
+<type>ABSOLUTE_METRIC_SCOPE</type>
+<logical-metric-name>Application Infrastructure Performance|AppDynamicsVM|Custom Metrics|URL Monitor|NEW_MBBB_OPR|Pattern Matches|TestFailed|Count</logical-metric-name>
+<metric-name>Custom Metrics|URL Monitor|NEW_MBBB_OPR|Pattern Matches|TestFailed|Count</metric-name>
+<entity>
+<entity-type>APPLICATION_COMPONENT</entity-type>
+<application-component>AppDynamicsVM</application-component>
+</entity>
+</metric-definition>
+</metric-expression>
+</policy-condition>
+</critical-execution-criteria>
+<warning-execution-criteria>
+<entity-aggregation-scope>
+<type>ANY</type>
+<value>0</value>
+</entity-aggregation-scope>
+<policy-condition>
+<type>leaf</type>
+<display-name>statusNotSuccesful</display-name>
+<condition-value-type>ABSOLUTE</condition-value-type>
+<condition-value>15.0</condition-value>
+<operator>LESS_THAN</operator>
+<condition-expression/>
+<use-active-baseline>false</use-active-baseline>
+<metric-expression>
+<type>leaf</type>
+<function-type>SUM</function-type>
+<value>0</value>
+<is-literal-expression>false</is-literal-expression>
+<display-name>null</display-name>
+<metric-definition>
+<type>ABSOLUTE_METRIC_SCOPE</type>
+<logical-metric-name>Application Infrastructure Performance|AppDynamicsVM|Custom Metrics|URL Monitor|NEW_MBBB_OPR|Status</logical-metric-name>
+<metric-name>Custom Metrics|URL Monitor|NEW_MBBB_OPR|Status</metric-name>
+<entity>
+<entity-type>APPLICATION_COMPONENT</entity-type>
+<application-component>AppDynamicsVM</application-component>
+</entity>
+</metric-definition>
+</metric-expression>
+</policy-condition>
+</warning-execution-criteria>
+</health-rule>
+
+
+<health-rule>
+<name>Availability_new_mbbb_otv</name>
+<type>OTHER</type>
+<description/>
+<enabled>true</enabled>
+<is-default>false</is-default>
+<always-enabled>true</always-enabled>
+<duration-min>20</duration-min>
+<wait-time-min>30</wait-time-min>
+<affected-entities-match-criteria>
+<other-affected-entities-match-criteria>
+<entity>
+<entity-type>APPLICATION</entity-type>
+</entity>
+</other-affected-entities-match-criteria>
+</affected-entities-match-criteria>
+<critical-execution-criteria>
+<entity-aggregation-scope>
+<type>ANY</type>
+<value>0</value>
+</entity-aggregation-scope>
+<policy-condition>
+<type>leaf</type>
+<display-name>testFailed</display-name>
+<condition-value-type>ABSOLUTE</condition-value-type>
+<condition-value>2.0</condition-value>
+<operator>GREATER_THAN</operator>
+<condition-expression/>
+<use-active-baseline>false</use-active-baseline>
+<metric-expression>
+<type>leaf</type>
+<function-type>SUM</function-type>
+<value>0</value>
+<is-literal-expression>false</is-literal-expression>
+<display-name>null</display-name>
+<metric-definition>
+<type>ABSOLUTE_METRIC_SCOPE</type>
+<logical-metric-name>Application Infrastructure Performance|AppDynamicsVM|Custom Metrics|URL Monitor|NEW_MBBB_OTV|Pattern Matches|TestFailed|Count</logical-metric-name>
+<metric-name>Custom Metrics|URL Monitor|NEW_MBBB_OTV|Pattern Matches|TestFailed|Count</metric-name>
+<entity>
+<entity-type>APPLICATION_COMPONENT</entity-type>
+<application-component>AppDynamicsVM</application-component>
+</entity>
+</metric-definition>
+</metric-expression>
+</policy-condition>
+</critical-execution-criteria>
+<warning-execution-criteria>
+<entity-aggregation-scope>
+<type>ANY</type>
+<value>0</value>
+</entity-aggregation-scope>
+<policy-condition>
+<type>leaf</type>
+<display-name>statusNotSuccesful</display-name>
+<condition-value-type>ABSOLUTE</condition-value-type>
+<condition-value>15.0</condition-value>
+<operator>LESS_THAN</operator>
+<condition-expression/>
+<use-active-baseline>false</use-active-baseline>
+<metric-expression>
+<type>leaf</type>
+<function-type>SUM</function-type>
+<value>0</value>
+<is-literal-expression>false</is-literal-expression>
+<display-name>null</display-name>
+<metric-definition>
+<type>ABSOLUTE_METRIC_SCOPE</type>
+<logical-metric-name>Application Infrastructure Performance|AppDynamicsVM|Custom Metrics|URL Monitor|NEW_MBBB_OTV|Status</logical-metric-name>
+<metric-name>Custom Metrics|URL Monitor|NEW_MBBB_OTV|Status</metric-name>
+<entity>
+<entity-type>APPLICATION_COMPONENT</entity-type>
+<application-component>AppDynamicsVM</application-component>
+</entity>
+</metric-definition>
+</metric-expression>
+</policy-condition>
+</warning-execution-criteria>
+</health-rule>
+
+
+<health-rule>
+<name>Availability_new_mbbb_profil</name>
+<type>OTHER</type>
+<description/>
+<enabled>true</enabled>
+<is-default>false</is-default>
+<always-enabled>true</always-enabled>
+<duration-min>20</duration-min>
+<wait-time-min>30</wait-time-min>
+<affected-entities-match-criteria>
+<other-affected-entities-match-criteria>
+<entity>
+<entity-type>APPLICATION</entity-type>
+</entity>
+</other-affected-entities-match-criteria>
+</affected-entities-match-criteria>
+<critical-execution-criteria>
+<entity-aggregation-scope>
+<type>ANY</type>
+<value>0</value>
+</entity-aggregation-scope>
+<policy-condition>
+<type>leaf</type>
+<display-name>testFailed</display-name>
+<condition-value-type>ABSOLUTE</condition-value-type>
+<condition-value>2.0</condition-value>
+<operator>GREATER_THAN</operator>
+<condition-expression/>
+<use-active-baseline>false</use-active-baseline>
+<metric-expression>
+<type>leaf</type>
+<function-type>SUM</function-type>
+<value>0</value>
+<is-literal-expression>false</is-literal-expression>
+<display-name>null</display-name>
+<metric-definition>
+<type>ABSOLUTE_METRIC_SCOPE</type>
+<logical-metric-name>Application Infrastructure Performance|AppDynamicsVM|Custom Metrics|URL Monitor|NEW_MBBB_PROFIL|Pattern Matches|TestFailed|Count</logical-metric-name>
+<metric-name>Custom Metrics|URL Monitor|NEW_MBBB_PROFIL|Pattern Matches|TestFailed|Count</metric-name>
+<entity>
+<entity-type>APPLICATION_COMPONENT</entity-type>
+<application-component>AppDynamicsVM</application-component>
+</entity>
+</metric-definition>
+</metric-expression>
+</policy-condition>
+</critical-execution-criteria>
+<warning-execution-criteria>
+<entity-aggregation-scope>
+<type>ANY</type>
+<value>0</value>
+</entity-aggregation-scope>
+<policy-condition>
+<type>leaf</type>
+<display-name>statusNotSuccesful</display-name>
+<condition-value-type>ABSOLUTE</condition-value-type>
+<condition-value>15.0</condition-value>
+<operator>LESS_THAN</operator>
+<condition-expression/>
+<use-active-baseline>false</use-active-baseline>
+<metric-expression>
+<type>leaf</type>
+<function-type>SUM</function-type>
+<value>0</value>
+<is-literal-expression>false</is-literal-expression>
+<display-name>null</display-name>
+<metric-definition>
+<type>ABSOLUTE_METRIC_SCOPE</type>
+<logical-metric-name>Application Infrastructure Performance|AppDynamicsVM|Custom Metrics|URL Monitor|NEW_MBBB_PROFIL|Status</logical-metric-name>
+<metric-name>Custom Metrics|URL Monitor|NEW_MBBB_PROFIL|Status</metric-name>
+<entity>
+<entity-type>APPLICATION_COMPONENT</entity-type>
+<application-component>AppDynamicsVM</application-component>
+</entity>
+</metric-definition>
+</metric-expression>
+</policy-condition>
+</warning-execution-criteria>
+</health-rule>
+
+
+<health-rule>
+<name>Availability_new_mbbb_picnav</name>
+<type>OTHER</type>
+<description/>
+<enabled>true</enabled>
+<is-default>false</is-default>
+<always-enabled>true</always-enabled>
+<duration-min>20</duration-min>
+<wait-time-min>30</wait-time-min>
+<affected-entities-match-criteria>
+<other-affected-entities-match-criteria>
+<entity>
+<entity-type>APPLICATION</entity-type>
+</entity>
+</other-affected-entities-match-criteria>
+</affected-entities-match-criteria>
+<critical-execution-criteria>
+<entity-aggregation-scope>
+<type>ANY</type>
+<value>0</value>
+</entity-aggregation-scope>
+<policy-condition>
+<type>leaf</type>
+<display-name>testFailed</display-name>
+<condition-value-type>ABSOLUTE</condition-value-type>
+<condition-value>2.0</condition-value>
+<operator>GREATER_THAN</operator>
+<condition-expression/>
+<use-active-baseline>false</use-active-baseline>
+<metric-expression>
+<type>leaf</type>
+<function-type>SUM</function-type>
+<value>0</value>
+<is-literal-expression>false</is-literal-expression>
+<display-name>null</display-name>
+<metric-definition>
+<type>ABSOLUTE_METRIC_SCOPE</type>
+<logical-metric-name>Application Infrastructure Performance|AppDynamicsVM|Custom Metrics|URL Monitor|NEW_MBBB_PICNAV|Pattern Matches|TestFailed|Count</logical-metric-name>
+<metric-name>Custom Metrics|URL Monitor|NEW_MBBB_PICNAV|Pattern Matches|TestFailed|Count</metric-name>
+<entity>
+<entity-type>APPLICATION_COMPONENT</entity-type>
+<application-component>AppDynamicsVM</application-component>
+</entity>
+</metric-definition>
+</metric-expression>
+</policy-condition>
+</critical-execution-criteria>
+<warning-execution-criteria>
+<entity-aggregation-scope>
+<type>ANY</type>
+<value>0</value>
+</entity-aggregation-scope>
+<policy-condition>
+<type>leaf</type>
+<display-name>statusNotSuccesful</display-name>
+<condition-value-type>ABSOLUTE</condition-value-type>
+<condition-value>15.0</condition-value>
+<operator>LESS_THAN</operator>
+<condition-expression/>
+<use-active-baseline>false</use-active-baseline>
+<metric-expression>
+<type>leaf</type>
+<function-type>SUM</function-type>
+<value>0</value>
+<is-literal-expression>false</is-literal-expression>
+<display-name>null</display-name>
+<metric-definition>
+<type>ABSOLUTE_METRIC_SCOPE</type>
+<logical-metric-name>Application Infrastructure Performance|AppDynamicsVM|Custom Metrics|URL Monitor|NEW_MBBB_PICNAV|Status</logical-metric-name>
+<metric-name>Custom Metrics|URL Monitor|NEW_MBBB_PICNAV|Status</metric-name>
+<entity>
+<entity-type>APPLICATION_COMPONENT</entity-type>
+<application-component>AppDynamicsVM</application-component>
+</entity>
+</metric-definition>
+</metric-expression>
+</policy-condition>
+</warning-execution-criteria>
+</health-rule>
+
+
+<health-rule>
+<name>Availability_new_mbbb_wetter</name>
+<type>OTHER</type>
+<description/>
+<enabled>true</enabled>
+<is-default>false</is-default>
+<always-enabled>true</always-enabled>
+<duration-min>20</duration-min>
+<wait-time-min>30</wait-time-min>
+<affected-entities-match-criteria>
+<other-affected-entities-match-criteria>
+<entity>
+<entity-type>APPLICATION</entity-type>
+</entity>
+</other-affected-entities-match-criteria>
+</affected-entities-match-criteria>
+<critical-execution-criteria>
+<entity-aggregation-scope>
+<type>ANY</type>
+<value>0</value>
+</entity-aggregation-scope>
+<policy-condition>
+<type>leaf</type>
+<display-name>testFailed</display-name>
+<condition-value-type>ABSOLUTE</condition-value-type>
+<condition-value>2.0</condition-value>
+<operator>GREATER_THAN</operator>
+<condition-expression/>
+<use-active-baseline>false</use-active-baseline>
+<metric-expression>
+<type>leaf</type>
+<function-type>SUM</function-type>
+<value>0</value>
+<is-literal-expression>false</is-literal-expression>
+<display-name>null</display-name>
+<metric-definition>
+<type>ABSOLUTE_METRIC_SCOPE</type>
+<logical-metric-name>Application Infrastructure Performance|AppDynamicsVM|Custom Metrics|URL Monitor|NEW_MBBB_WETTER|Pattern Matches|TestFailed|Count</logical-metric-name>
+<metric-name>Custom Metrics|URL Monitor|NEW_MBBB_WETTER|Pattern Matches|TestFailed|Count</metric-name>
+<entity>
+<entity-type>APPLICATION_COMPONENT</entity-type>
+<application-component>AppDynamicsVM</application-component>
+</entity>
+</metric-definition>
+</metric-expression>
+</policy-condition>
+</critical-execution-criteria>
+<warning-execution-criteria>
+<entity-aggregation-scope>
+<type>ANY</type>
+<value>0</value>
+</entity-aggregation-scope>
+<policy-condition>
+<type>leaf</type>
+<display-name>statusNotSuccesful</display-name>
+<condition-value-type>ABSOLUTE</condition-value-type>
+<condition-value>15.0</condition-value>
+<operator>LESS_THAN</operator>
+<condition-expression/>
+<use-active-baseline>false</use-active-baseline>
+<metric-expression>
+<type>leaf</type>
+<function-type>SUM</function-type>
+<value>0</value>
+<is-literal-expression>false</is-literal-expression>
+<display-name>null</display-name>
+<metric-definition>
+<type>ABSOLUTE_METRIC_SCOPE</type>
+<logical-metric-name>Application Infrastructure Performance|AppDynamicsVM|Custom Metrics|URL Monitor|NEW_MBBB_WETTER|Status</logical-metric-name>
+<metric-name>Custom Metrics|URL Monitor|NEW_MBBB_WETTER|Status</metric-name>
+<entity>
+<entity-type>APPLICATION_COMPONENT</entity-type>
+<application-component>AppDynamicsVM</application-component>
+</entity>
+</metric-definition>
+</metric-expression>
+</policy-condition>
+</warning-execution-criteria>
+</health-rule>
+
+
+<health-rule>
+<name>Availability_new_mbbb_reise</name>
+<type>OTHER</type>
+<description/>
+<enabled>true</enabled>
+<is-default>false</is-default>
+<always-enabled>true</always-enabled>
+<duration-min>20</duration-min>
+<wait-time-min>30</wait-time-min>
+<affected-entities-match-criteria>
+<other-affected-entities-match-criteria>
+<entity>
+<entity-type>APPLICATION</entity-type>
+</entity>
+</other-affected-entities-match-criteria>
+</affected-entities-match-criteria>
+<critical-execution-criteria>
+<entity-aggregation-scope>
+<type>ANY</type>
+<value>0</value>
+</entity-aggregation-scope>
+<policy-condition>
+<type>leaf</type>
+<display-name>testFailed</display-name>
+<condition-value-type>ABSOLUTE</condition-value-type>
+<condition-value>2.0</condition-value>
+<operator>GREATER_THAN</operator>
+<condition-expression/>
+<use-active-baseline>false</use-active-baseline>
+<metric-expression>
+<type>leaf</type>
+<function-type>SUM</function-type>
+<value>0</value>
+<is-literal-expression>false</is-literal-expression>
+<display-name>null</display-name>
+<metric-definition>
+<type>ABSOLUTE_METRIC_SCOPE</type>
+<logical-metric-name>Application Infrastructure Performance|AppDynamicsVM|Custom Metrics|URL Monitor|NEW_MBBB_REISE|Pattern Matches|TestFailed|Count</logical-metric-name>
+<metric-name>Custom Metrics|URL Monitor|NEW_MBBB_REISE|Pattern Matches|TestFailed|Count</metric-name>
+<entity>
+<entity-type>APPLICATION_COMPONENT</entity-type>
+<application-component>AppDynamicsVM</application-component>
+</entity>
+</metric-definition>
+</metric-expression>
+</policy-condition>
+</critical-execution-criteria>
+<warning-execution-criteria>
+<entity-aggregation-scope>
+<type>ANY</type>
+<value>0</value>
+</entity-aggregation-scope>
+<policy-condition>
+<type>leaf</type>
+<display-name>statusNotSuccesful</display-name>
+<condition-value-type>ABSOLUTE</condition-value-type>
+<condition-value>15.0</condition-value>
+<operator>LESS_THAN</operator>
+<condition-expression/>
+<use-active-baseline>false</use-active-baseline>
+<metric-expression>
+<type>leaf</type>
+<function-type>SUM</function-type>
+<value>0</value>
+<is-literal-expression>false</is-literal-expression>
+<display-name>null</display-name>
+<metric-definition>
+<type>ABSOLUTE_METRIC_SCOPE</type>
+<logical-metric-name>Application Infrastructure Performance|AppDynamicsVM|Custom Metrics|URL Monitor|NEW_MBBB_REISE|Status</logical-metric-name>
+<metric-name>Custom Metrics|URL Monitor|NEW_MBBB_REISE|Status</metric-name>
+<entity>
+<entity-type>APPLICATION_COMPONENT</entity-type>
+<application-component>AppDynamicsVM</application-component>
+</entity>
+</metric-definition>
+</metric-expression>
+</policy-condition>
+</warning-execution-criteria>
+</health-rule>
+
+
+<health-rule>
+<name>Availability_new_mbbb_twit</name>
+<type>OTHER</type>
+<description/>
+<enabled>true</enabled>
+<is-default>false</is-default>
+<always-enabled>true</always-enabled>
+<duration-min>20</duration-min>
+<wait-time-min>30</wait-time-min>
+<affected-entities-match-criteria>
+<other-affected-entities-match-criteria>
+<entity>
+<entity-type>APPLICATION</entity-type>
+</entity>
+</other-affected-entities-match-criteria>
+</affected-entities-match-criteria>
+<critical-execution-criteria>
+<entity-aggregation-scope>
+<type>ANY</type>
+<value>0</value>
+</entity-aggregation-scope>
+<policy-condition>
+<type>leaf</type>
+<display-name>testFailed</display-name>
+<condition-value-type>ABSOLUTE</condition-value-type>
+<condition-value>2.0</condition-value>
+<operator>GREATER_THAN</operator>
+<condition-expression/>
+<use-active-baseline>false</use-active-baseline>
+<metric-expression>
+<type>leaf</type>
+<function-type>SUM</function-type>
+<value>0</value>
+<is-literal-expression>false</is-literal-expression>
+<display-name>null</display-name>
+<metric-definition>
+<type>ABSOLUTE_METRIC_SCOPE</type>
+<logical-metric-name>Application Infrastructure Performance|AppDynamicsVM|Custom Metrics|URL Monitor|NEW_MBBB_TWIT|Pattern Matches|TestFailed|Count</logical-metric-name>
+<metric-name>Custom Metrics|URL Monitor|NEW_MBBB_TWIT|Pattern Matches|TestFailed|Count</metric-name>
+<entity>
+<entity-type>APPLICATION_COMPONENT</entity-type>
+<application-component>AppDynamicsVM</application-component>
+</entity>
+</metric-definition>
+</metric-expression>
+</policy-condition>
+</critical-execution-criteria>
+<warning-execution-criteria>
+<entity-aggregation-scope>
+<type>ANY</type>
+<value>0</value>
+</entity-aggregation-scope>
+<policy-condition>
+<type>leaf</type>
+<display-name>statusNotSuccesful</display-name>
+<condition-value-type>ABSOLUTE</condition-value-type>
+<condition-value>15.0</condition-value>
+<operator>LESS_THAN</operator>
+<condition-expression/>
+<use-active-baseline>false</use-active-baseline>
+<metric-expression>
+<type>leaf</type>
+<function-type>SUM</function-type>
+<value>0</value>
+<is-literal-expression>false</is-literal-expression>
+<display-name>null</display-name>
+<metric-definition>
+<type>ABSOLUTE_METRIC_SCOPE</type>
+<logical-metric-name>Application Infrastructure Performance|AppDynamicsVM|Custom Metrics|URL Monitor|NEW_MBBB_TWIT|Status</logical-metric-name>
+<metric-name>Custom Metrics|URL Monitor|NEW_MBBB_TWIT|Status</metric-name>
+<entity>
+<entity-type>APPLICATION_COMPONENT</entity-type>
+<application-component>AppDynamicsVM</application-component>
+</entity>
+</metric-definition>
+</metric-expression>
+</policy-condition>
+</warning-execution-criteria>
+</health-rule>
+
+
+<health-rule>
+<name>Availability_new_mbbb_train</name>
+<type>OTHER</type>
+<description/>
+<enabled>true</enabled>
+<is-default>false</is-default>
+<always-enabled>true</always-enabled>
+<duration-min>20</duration-min>
+<wait-time-min>30</wait-time-min>
+<affected-entities-match-criteria>
+<other-affected-entities-match-criteria>
+<entity>
+<entity-type>APPLICATION</entity-type>
+</entity>
+</other-affected-entities-match-criteria>
+</affected-entities-match-criteria>
+<critical-execution-criteria>
+<entity-aggregation-scope>
+<type>ANY</type>
+<value>0</value>
+</entity-aggregation-scope>
+<policy-condition>
+<type>leaf</type>
+<display-name>testFailed</display-name>
+<condition-value-type>ABSOLUTE</condition-value-type>
+<condition-value>2.0</condition-value>
+<operator>GREATER_THAN</operator>
+<condition-expression/>
+<use-active-baseline>false</use-active-baseline>
+<metric-expression>
+<type>leaf</type>
+<function-type>SUM</function-type>
+<value>0</value>
+<is-literal-expression>false</is-literal-expression>
+<display-name>null</display-name>
+<metric-definition>
+<type>ABSOLUTE_METRIC_SCOPE</type>
+<logical-metric-name>Application Infrastructure Performance|AppDynamicsVM|Custom Metrics|URL Monitor|NEW_MBBB_TRAIN|Pattern Matches|TestFailed|Count</logical-metric-name>
+<metric-name>Custom Metrics|URL Monitor|NEW_MBBB_TRAIN|Pattern Matches|TestFailed|Count</metric-name>
+<entity>
+<entity-type>APPLICATION_COMPONENT</entity-type>
+<application-component>AppDynamicsVM</application-component>
+</entity>
+</metric-definition>
+</metric-expression>
+</policy-condition>
+</critical-execution-criteria>
+<warning-execution-criteria>
+<entity-aggregation-scope>
+<type>ANY</type>
+<value>0</value>
+</entity-aggregation-scope>
+<policy-condition>
+<type>leaf</type>
+<display-name>statusNotSuccesful</display-name>
+<condition-value-type>ABSOLUTE</condition-value-type>
+<condition-value>15.0</condition-value>
+<operator>LESS_THAN</operator>
+<condition-expression/>
+<use-active-baseline>false</use-active-baseline>
+<metric-expression>
+<type>leaf</type>
+<function-type>SUM</function-type>
+<value>0</value>
+<is-literal-expression>false</is-literal-expression>
+<display-name>null</display-name>
+<metric-definition>
+<type>ABSOLUTE_METRIC_SCOPE</type>
+<logical-metric-name>Application Infrastructure Performance|AppDynamicsVM|Custom Metrics|URL Monitor|NEW_MBBB_TRAIN|Status</logical-metric-name>
+<metric-name>Custom Metrics|URL Monitor|NEW_MBBB_TRAIN|Status</metric-name>
+<entity>
+<entity-type>APPLICATION_COMPONENT</entity-type>
+<application-component>AppDynamicsVM</application-component>
+</entity>
+</metric-definition>
+</metric-expression>
+</policy-condition>
+</warning-execution-criteria>
+</health-rule>
+
+
+<health-rule>
+<name>Availability_new_mbbb_poi</name>
+<type>OTHER</type>
+<description/>
+<enabled>true</enabled>
+<is-default>false</is-default>
+<always-enabled>true</always-enabled>
+<duration-min>20</duration-min>
+<wait-time-min>30</wait-time-min>
+<affected-entities-match-criteria>
+<other-affected-entities-match-criteria>
+<entity>
+<entity-type>APPLICATION</entity-type>
+</entity>
+</other-affected-entities-match-criteria>
+</affected-entities-match-criteria>
+<critical-execution-criteria>
+<entity-aggregation-scope>
+<type>ANY</type>
+<value>0</value>
+</entity-aggregation-scope>
+<policy-condition>
+<type>leaf</type>
+<display-name>testFailed</display-name>
+<condition-value-type>ABSOLUTE</condition-value-type>
+<condition-value>2.0</condition-value>
+<operator>GREATER_THAN</operator>
+<condition-expression/>
+<use-active-baseline>false</use-active-baseline>
+<metric-expression>
+<type>leaf</type>
+<function-type>SUM</function-type>
+<value>0</value>
+<is-literal-expression>false</is-literal-expression>
+<display-name>null</display-name>
+<metric-definition>
+<type>ABSOLUTE_METRIC_SCOPE</type>
+<logical-metric-name>Application Infrastructure Performance|AppDynamicsVM|Custom Metrics|URL Monitor|NEW_MBBB_POI|Pattern Matches|TestFailed|Count</logical-metric-name>
+<metric-name>Custom Metrics|URL Monitor|NEW_MBBB_POI|Pattern Matches|TestFailed|Count</metric-name>
+<entity>
+<entity-type>APPLICATION_COMPONENT</entity-type>
+<application-component>AppDynamicsVM</application-component>
+</entity>
+</metric-definition>
+</metric-expression>
+</policy-condition>
+</critical-execution-criteria>
+<warning-execution-criteria>
+<entity-aggregation-scope>
+<type>ANY</type>
+<value>0</value>
+</entity-aggregation-scope>
+<policy-condition>
+<type>leaf</type>
+<display-name>statusNotSuccesful</display-name>
+<condition-value-type>ABSOLUTE</condition-value-type>
+<condition-value>15.0</condition-value>
+<operator>LESS_THAN</operator>
+<condition-expression/>
+<use-active-baseline>false</use-active-baseline>
+<metric-expression>
+<type>leaf</type>
+<function-type>SUM</function-type>
+<value>0</value>
+<is-literal-expression>false</is-literal-expression>
+<display-name>null</display-name>
+<metric-definition>
+<type>ABSOLUTE_METRIC_SCOPE</type>
+<logical-metric-name>Application Infrastructure Performance|AppDynamicsVM|Custom Metrics|URL Monitor|NEW_MBBB_POI|Status</logical-metric-name>
+<metric-name>Custom Metrics|URL Monitor|NEW_MBBB_POI|Status</metric-name>
+<entity>
+<entity-type>APPLICATION_COMPONENT</entity-type>
+<application-component>AppDynamicsVM</application-component>
+</entity>
+</metric-definition>
+</metric-expression>
+</policy-condition>
+</warning-execution-criteria>
+</health-rule>
+
+
+<health-rule>
+<name>Availability_new_mbbb_traffic</name>
+<type>OTHER</type>
+<description/>
+<enabled>true</enabled>
+<is-default>false</is-default>
+<always-enabled>true</always-enabled>
+<duration-min>20</duration-min>
+<wait-time-min>30</wait-time-min>
+<affected-entities-match-criteria>
+<other-affected-entities-match-criteria>
+<entity>
+<entity-type>APPLICATION</entity-type>
+</entity>
+</other-affected-entities-match-criteria>
+</affected-entities-match-criteria>
+<critical-execution-criteria>
+<entity-aggregation-scope>
+<type>ANY</type>
+<value>0</value>
+</entity-aggregation-scope>
+<policy-condition>
+<type>leaf</type>
+<display-name>testFailed</display-name>
+<condition-value-type>ABSOLUTE</condition-value-type>
+<condition-value>2.0</condition-value>
+<operator>GREATER_THAN</operator>
+<condition-expression/>
+<use-active-baseline>false</use-active-baseline>
+<metric-expression>
+<type>leaf</type>
+<function-type>SUM</function-type>
+<value>0</value>
+<is-literal-expression>false</is-literal-expression>
+<display-name>null</display-name>
+<metric-definition>
+<type>ABSOLUTE_METRIC_SCOPE</type>
+<logical-metric-name>Application Infrastructure Performance|AppDynamicsVM|Custom Metrics|URL Monitor|NEW_MBBB_TRAFFIC|Pattern Matches|TestFailed|Count</logical-metric-name>
+<metric-name>Custom Metrics|URL Monitor|NEW_MBBB_TRAFFIC|Pattern Matches|TestFailed|Count</metric-name>
+<entity>
+<entity-type>APPLICATION_COMPONENT</entity-type>
+<application-component>AppDynamicsVM</application-component>
+</entity>
+</metric-definition>
+</metric-expression>
+</policy-condition>
+</critical-execution-criteria>
+<warning-execution-criteria>
+<entity-aggregation-scope>
+<type>ANY</type>
+<value>0</value>
+</entity-aggregation-scope>
+<policy-condition>
+<type>leaf</type>
+<display-name>statusNotSuccesful</display-name>
+<condition-value-type>ABSOLUTE</condition-value-type>
+<condition-value>15.0</condition-value>
+<operator>LESS_THAN</operator>
+<condition-expression/>
+<use-active-baseline>false</use-active-baseline>
+<metric-expression>
+<type>leaf</type>
+<function-type>SUM</function-type>
+<value>0</value>
+<is-literal-expression>false</is-literal-expression>
+<display-name>null</display-name>
+<metric-definition>
+<type>ABSOLUTE_METRIC_SCOPE</type>
+<logical-metric-name>Application Infrastructure Performance|AppDynamicsVM|Custom Metrics|URL Monitor|NEW_MBBB_TRAFFIC|Status</logical-metric-name>
+<metric-name>Custom Metrics|URL Monitor|NEW_MBBB_TRAFFIC|Status</metric-name>
+<entity>
+<entity-type>APPLICATION_COMPONENT</entity-type>
+<application-component>AppDynamicsVM</application-component>
+</entity>
+</metric-definition>
+</metric-expression>
+</policy-condition>
+</warning-execution-criteria>
+</health-rule>
+
+
+<health-rule>
+<name>Availability_new_mbbb_prspoi</name>
+<type>OTHER</type>
+<description/>
+<enabled>true</enabled>
+<is-default>false</is-default>
+<always-enabled>true</always-enabled>
+<duration-min>20</duration-min>
+<wait-time-min>30</wait-time-min>
+<affected-entities-match-criteria>
+<other-affected-entities-match-criteria>
+<entity>
+<entity-type>APPLICATION</entity-type>
+</entity>
+</other-affected-entities-match-criteria>
+</affected-entities-match-criteria>
+<critical-execution-criteria>
+<entity-aggregation-scope>
+<type>ANY</type>
+<value>0</value>
+</entity-aggregation-scope>
+<policy-condition>
+<type>leaf</type>
+<display-name>testFailed</display-name>
+<condition-value-type>ABSOLUTE</condition-value-type>
+<condition-value>2.0</condition-value>
+<operator>GREATER_THAN</operator>
+<condition-expression/>
+<use-active-baseline>false</use-active-baseline>
+<metric-expression>
+<type>leaf</type>
+<function-type>SUM</function-type>
+<value>0</value>
+<is-literal-expression>false</is-literal-expression>
+<display-name>null</display-name>
+<metric-definition>
+<type>ABSOLUTE_METRIC_SCOPE</type>
+<logical-metric-name>Application Infrastructure Performance|AppDynamicsVM|Custom Metrics|URL Monitor|NEW_MBBB_PRSPOI|Pattern Matches|TestFailed|Count</logical-metric-name>
+<metric-name>Custom Metrics|URL Monitor|NEW_MBBB_PRSPOI|Pattern Matches|TestFailed|Count</metric-name>
+<entity>
+<entity-type>APPLICATION_COMPONENT</entity-type>
+<application-component>AppDynamicsVM</application-component>
+</entity>
+</metric-definition>
+</metric-expression>
+</policy-condition>
+</critical-execution-criteria>
+<warning-execution-criteria>
+<entity-aggregation-scope>
+<type>ANY</type>
+<value>0</value>
+</entity-aggregation-scope>
+<policy-condition>
+<type>leaf</type>
+<display-name>statusNotSuccesful</display-name>
+<condition-value-type>ABSOLUTE</condition-value-type>
+<condition-value>15.0</condition-value>
+<operator>LESS_THAN</operator>
+<condition-expression/>
+<use-active-baseline>false</use-active-baseline>
+<metric-expression>
+<type>leaf</type>
+<function-type>SUM</function-type>
+<value>0</value>
+<is-literal-expression>false</is-literal-expression>
+<display-name>null</display-name>
+<metric-definition>
+<type>ABSOLUTE_METRIC_SCOPE</type>
+<logical-metric-name>Application Infrastructure Performance|AppDynamicsVM|Custom Metrics|URL Monitor|NEW_MBBB_PRSPOI|Status</logical-metric-name>
+<metric-name>Custom Metrics|URL Monitor|NEW_MBBB_PRSPOI|Status</metric-name>
+<entity>
+<entity-type>APPLICATION_COMPONENT</entity-type>
+<application-component>AppDynamicsVM</application-component>
+</entity>
+</metric-definition>
+</metric-expression>
+</policy-condition>
+</warning-execution-criteria>
+</health-rule>
+
+
+<health-rule>
+<name>Availability_new_mbbb_rlu</name>
+<type>OTHER</type>
+<description/>
+<enabled>true</enabled>
+<is-default>false</is-default>
+<always-enabled>true</always-enabled>
+<duration-min>20</duration-min>
+<wait-time-min>30</wait-time-min>
+<affected-entities-match-criteria>
+<other-affected-entities-match-criteria>
+<entity>
+<entity-type>APPLICATION</entity-type>
+</entity>
+</other-affected-entities-match-criteria>
+</affected-entities-match-criteria>
+<critical-execution-criteria>
+<entity-aggregation-scope>
+<type>ANY</type>
+<value>0</value>
+</entity-aggregation-scope>
+<policy-condition>
+<type>leaf</type>
+<display-name>testFailed</display-name>
+<condition-value-type>ABSOLUTE</condition-value-type>
+<condition-value>2.0</condition-value>
+<operator>GREATER_THAN</operator>
+<condition-expression/>
+<use-active-baseline>false</use-active-baseline>
+<metric-expression>
+<type>leaf</type>
+<function-type>SUM</function-type>
+<value>0</value>
+<is-literal-expression>false</is-literal-expression>
+<display-name>null</display-name>
+<metric-definition>
+<type>ABSOLUTE_METRIC_SCOPE</type>
+<logical-metric-name>Application Infrastructure Performance|AppDynamicsVM|Custom Metrics|URL Monitor|NEW_MBBB_RLU|Pattern Matches|TestFailed|Count</logical-metric-name>
+<metric-name>Custom Metrics|URL Monitor|NEW_MBBB_RLU|Pattern Matches|TestFailed|Count</metric-name>
+<entity>
+<entity-type>APPLICATION_COMPONENT</entity-type>
+<application-component>AppDynamicsVM</application-component>
+</entity>
+</metric-definition>
+</metric-expression>
+</policy-condition>
+</critical-execution-criteria>
+<warning-execution-criteria>
+<entity-aggregation-scope>
+<type>ANY</type>
+<value>0</value>
+</entity-aggregation-scope>
+<policy-condition>
+<type>leaf</type>
+<display-name>statusNotSuccesful</display-name>
+<condition-value-type>ABSOLUTE</condition-value-type>
+<condition-value>15.0</condition-value>
+<operator>LESS_THAN</operator>
+<condition-expression/>
+<use-active-baseline>false</use-active-baseline>
+<metric-expression>
+<type>leaf</type>
+<function-type>SUM</function-type>
+<value>0</value>
+<is-literal-expression>false</is-literal-expression>
+<display-name>null</display-name>
+<metric-definition>
+<type>ABSOLUTE_METRIC_SCOPE</type>
+<logical-metric-name>Application Infrastructure Performance|AppDynamicsVM|Custom Metrics|URL Monitor|NEW_MBBB_RLU|Status</logical-metric-name>
+<metric-name>Custom Metrics|URL Monitor|NEW_MBBB_RLU|Status</metric-name>
+<entity>
+<entity-type>APPLICATION_COMPONENT</entity-type>
+<application-component>AppDynamicsVM</application-component>
+</entity>
+</metric-definition>
+</metric-expression>
+</policy-condition>
+</warning-execution-criteria>
+</health-rule>
+
+
+<health-rule>
+<name>Availability_new_mbbb_rs</name>
+<type>OTHER</type>
+<description/>
+<enabled>true</enabled>
+<is-default>false</is-default>
+<always-enabled>true</always-enabled>
+<duration-min>20</duration-min>
+<wait-time-min>30</wait-time-min>
+<affected-entities-match-criteria>
+<other-affected-entities-match-criteria>
+<entity>
+<entity-type>APPLICATION</entity-type>
+</entity>
+</other-affected-entities-match-criteria>
+</affected-entities-match-criteria>
+<critical-execution-criteria>
+<entity-aggregation-scope>
+<type>ANY</type>
+<value>0</value>
+</entity-aggregation-scope>
+<policy-condition>
+<type>leaf</type>
+<display-name>testFailed</display-name>
+<condition-value-type>ABSOLUTE</condition-value-type>
+<condition-value>2.0</condition-value>
+<operator>GREATER_THAN</operator>
+<condition-expression/>
+<use-active-baseline>false</use-active-baseline>
+<metric-expression>
+<type>leaf</type>
+<function-type>SUM</function-type>
+<value>0</value>
+<is-literal-expression>false</is-literal-expression>
+<display-name>null</display-name>
+<metric-definition>
+<type>ABSOLUTE_METRIC_SCOPE</type>
+<logical-metric-name>Application Infrastructure Performance|AppDynamicsVM|Custom Metrics|URL Monitor|NEW_MBBB_RS|Pattern Matches|TestFailed|Count</logical-metric-name>
+<metric-name>Custom Metrics|URL Monitor|NEW_MBBB_RS|Pattern Matches|TestFailed|Count</metric-name>
+<entity>
+<entity-type>APPLICATION_COMPONENT</entity-type>
+<application-component>AppDynamicsVM</application-component>
+</entity>
+</metric-definition>
+</metric-expression>
+</policy-condition>
+</critical-execution-criteria>
+<warning-execution-criteria>
+<entity-aggregation-scope>
+<type>ANY</type>
+<value>0</value>
+</entity-aggregation-scope>
+<policy-condition>
+<type>leaf</type>
+<display-name>statusNotSuccesful</display-name>
+<condition-value-type>ABSOLUTE</condition-value-type>
+<condition-value>15.0</condition-value>
+<operator>LESS_THAN</operator>
+<condition-expression/>
+<use-active-baseline>false</use-active-baseline>
+<metric-expression>
+<type>leaf</type>
+<function-type>SUM</function-type>
+<value>0</value>
+<is-literal-expression>false</is-literal-expression>
+<display-name>null</display-name>
+<metric-definition>
+<type>ABSOLUTE_METRIC_SCOPE</type>
+<logical-metric-name>Application Infrastructure Performance|AppDynamicsVM|Custom Metrics|URL Monitor|NEW_MBBB_RS|Status</logical-metric-name>
+<metric-name>Custom Metrics|URL Monitor|NEW_MBBB_RS|Status</metric-name>
+<entity>
+<entity-type>APPLICATION_COMPONENT</entity-type>
+<application-component>AppDynamicsVM</application-component>
+</entity>
+</metric-definition>
+</metric-expression>
+</policy-condition>
+</warning-execution-criteria>
+</health-rule>
+
+
+<health-rule>
+<name>Availability_new_mbbb_rusm</name>
+<type>OTHER</type>
+<description/>
+<enabled>true</enabled>
+<is-default>false</is-default>
+<always-enabled>true</always-enabled>
+<duration-min>20</duration-min>
+<wait-time-min>30</wait-time-min>
+<affected-entities-match-criteria>
+<other-affected-entities-match-criteria>
+<entity>
+<entity-type>APPLICATION</entity-type>
+</entity>
+</other-affected-entities-match-criteria>
+</affected-entities-match-criteria>
+<critical-execution-criteria>
+<entity-aggregation-scope>
+<type>ANY</type>
+<value>0</value>
+</entity-aggregation-scope>
+<policy-condition>
+<type>leaf</type>
+<display-name>testFailed</display-name>
+<condition-value-type>ABSOLUTE</condition-value-type>
+<condition-value>2.0</condition-value>
+<operator>GREATER_THAN</operator>
+<condition-expression/>
+<use-active-baseline>false</use-active-baseline>
+<metric-expression>
+<type>leaf</type>
+<function-type>SUM</function-type>
+<value>0</value>
+<is-literal-expression>false</is-literal-expression>
+<display-name>null</display-name>
+<metric-definition>
+<type>ABSOLUTE_METRIC_SCOPE</type>
+<logical-metric-name>Application Infrastructure Performance|AppDynamicsVM|Custom Metrics|URL Monitor|NEW_MBBB_RUSM|Pattern Matches|TestFailed|Count</logical-metric-name>
+<metric-name>Custom Metrics|URL Monitor|NEW_MBBB_RUSM|Pattern Matches|TestFailed|Count</metric-name>
+<entity>
+<entity-type>APPLICATION_COMPONENT</entity-type>
+<application-component>AppDynamicsVM</application-component>
+</entity>
+</metric-definition>
+</metric-expression>
+</policy-condition>
+</critical-execution-criteria>
+<warning-execution-criteria>
+<entity-aggregation-scope>
+<type>ANY</type>
+<value>0</value>
+</entity-aggregation-scope>
+<policy-condition>
+<type>leaf</type>
+<display-name>statusNotSuccesful</display-name>
+<condition-value-type>ABSOLUTE</condition-value-type>
+<condition-value>15.0</condition-value>
+<operator>LESS_THAN</operator>
+<condition-expression/>
+<use-active-baseline>false</use-active-baseline>
+<metric-expression>
+<type>leaf</type>
+<function-type>SUM</function-type>
+<value>0</value>
+<is-literal-expression>false</is-literal-expression>
+<display-name>null</display-name>
+<metric-definition>
+<type>ABSOLUTE_METRIC_SCOPE</type>
+<logical-metric-name>Application Infrastructure Performance|AppDynamicsVM|Custom Metrics|URL Monitor|NEW_MBBB_RUSM|Status</logical-metric-name>
+<metric-name>Custom Metrics|URL Monitor|NEW_MBBB_RUSM|Status</metric-name>
+<entity>
+<entity-type>APPLICATION_COMPONENT</entity-type>
+<application-component>AppDynamicsVM</application-component>
+</entity>
+</metric-definition>
+</metric-expression>
+</policy-condition>
+</warning-execution-criteria>
+</health-rule>
+
+
+<health-rule>
+<name>Availability_new_mbbb_vsr</name>
+<type>OTHER</type>
+<description/>
+<enabled>true</enabled>
+<is-default>false</is-default>
+<always-enabled>true</always-enabled>
+<duration-min>20</duration-min>
+<wait-time-min>30</wait-time-min>
+<affected-entities-match-criteria>
+<other-affected-entities-match-criteria>
+<entity>
+<entity-type>APPLICATION</entity-type>
+</entity>
+</other-affected-entities-match-criteria>
+</affected-entities-match-criteria>
+<critical-execution-criteria>
+<entity-aggregation-scope>
+<type>ANY</type>
+<value>0</value>
+</entity-aggregation-scope>
+<policy-condition>
+<type>leaf</type>
+<display-name>testFailed</display-name>
+<condition-value-type>ABSOLUTE</condition-value-type>
+<condition-value>2.0</condition-value>
+<operator>GREATER_THAN</operator>
+<condition-expression/>
+<use-active-baseline>false</use-active-baseline>
+<metric-expression>
+<type>leaf</type>
+<function-type>SUM</function-type>
+<value>0</value>
+<is-literal-expression>false</is-literal-expression>
+<display-name>null</display-name>
+<metric-definition>
+<type>ABSOLUTE_METRIC_SCOPE</type>
+<logical-metric-name>Application Infrastructure Performance|AppDynamicsVM|Custom Metrics|URL Monitor|NEW_MBBB_VSR|Pattern Matches|TestFailed|Count</logical-metric-name>
+<metric-name>Custom Metrics|URL Monitor|NEW_MBBB_VSR|Pattern Matches|TestFailed|Count</metric-name>
+<entity>
+<entity-type>APPLICATION_COMPONENT</entity-type>
+<application-component>AppDynamicsVM</application-component>
+</entity>
+</metric-definition>
+</metric-expression>
+</policy-condition>
+</critical-execution-criteria>
+<warning-execution-criteria>
+<entity-aggregation-scope>
+<type>ANY</type>
+<value>0</value>
+</entity-aggregation-scope>
+<policy-condition>
+<type>leaf</type>
+<display-name>statusNotSuccesful</display-name>
+<condition-value-type>ABSOLUTE</condition-value-type>
+<condition-value>15.0</condition-value>
+<operator>LESS_THAN</operator>
+<condition-expression/>
+<use-active-baseline>false</use-active-baseline>
+<metric-expression>
+<type>leaf</type>
+<function-type>SUM</function-type>
+<value>0</value>
+<is-literal-expression>false</is-literal-expression>
+<display-name>null</display-name>
+<metric-definition>
+<type>ABSOLUTE_METRIC_SCOPE</type>
+<logical-metric-name>Application Infrastructure Performance|AppDynamicsVM|Custom Metrics|URL Monitor|NEW_MBBB_VSR|Status</logical-metric-name>
+<metric-name>Custom Metrics|URL Monitor|NEW_MBBB_VSR|Status</metric-name>
+<entity>
+<entity-type>APPLICATION_COMPONENT</entity-type>
+<application-component>AppDynamicsVM</application-component>
+</entity>
+</metric-definition>
+</metric-expression>
+</policy-condition>
+</warning-execution-criteria>
+</health-rule>
+
+
+<health-rule>
+<name>Availability_new_mbbb_rbc</name>
+<type>OTHER</type>
+<description/>
+<enabled>true</enabled>
+<is-default>false</is-default>
+<always-enabled>true</always-enabled>
+<duration-min>20</duration-min>
+<wait-time-min>30</wait-time-min>
+<affected-entities-match-criteria>
+<other-affected-entities-match-criteria>
+<entity>
+<entity-type>APPLICATION</entity-type>
+</entity>
+</other-affected-entities-match-criteria>
+</affected-entities-match-criteria>
+<critical-execution-criteria>
+<entity-aggregation-scope>
+<type>ANY</type>
+<value>0</value>
+</entity-aggregation-scope>
+<policy-condition>
+<type>leaf</type>
+<display-name>testFailed</display-name>
+<condition-value-type>ABSOLUTE</condition-value-type>
+<condition-value>2.0</condition-value>
+<operator>GREATER_THAN</operator>
+<condition-expression/>
+<use-active-baseline>false</use-active-baseline>
+<metric-expression>
+<type>leaf</type>
+<function-type>SUM</function-type>
+<value>0</value>
+<is-literal-expression>false</is-literal-expression>
+<display-name>null</display-name>
+<metric-definition>
+<type>ABSOLUTE_METRIC_SCOPE</type>
+<logical-metric-name>Application Infrastructure Performance|AppDynamicsVM|Custom Metrics|URL Monitor|NEW_MBBB_RBC|Pattern Matches|TestFailed|Count</logical-metric-name>
+<metric-name>Custom Metrics|URL Monitor|NEW_MBBB_RBC|Pattern Matches|TestFailed|Count</metric-name>
+<entity>
+<entity-type>APPLICATION_COMPONENT</entity-type>
+<application-component>AppDynamicsVM</application-component>
+</entity>
+</metric-definition>
+</metric-expression>
+</policy-condition>
+</critical-execution-criteria>
+<warning-execution-criteria>
+<entity-aggregation-scope>
+<type>ANY</type>
+<value>0</value>
+</entity-aggregation-scope>
+<policy-condition>
+<type>leaf</type>
+<display-name>statusNotSuccesful</display-name>
+<condition-value-type>ABSOLUTE</condition-value-type>
+<condition-value>15.0</condition-value>
+<operator>LESS_THAN</operator>
+<condition-expression/>
+<use-active-baseline>false</use-active-baseline>
+<metric-expression>
+<type>leaf</type>
+<function-type>SUM</function-type>
+<value>0</value>
+<is-literal-expression>false</is-literal-expression>
+<display-name>null</display-name>
+<metric-definition>
+<type>ABSOLUTE_METRIC_SCOPE</type>
+<logical-metric-name>Application Infrastructure Performance|AppDynamicsVM|Custom Metrics|URL Monitor|NEW_MBBB_RBC|Status</logical-metric-name>
+<metric-name>Custom Metrics|URL Monitor|NEW_MBBB_RBC|Status</metric-name>
+<entity>
+<entity-type>APPLICATION_COMPONENT</entity-type>
+<application-component>AppDynamicsVM</application-component>
+</entity>
+</metric-definition>
+</metric-expression>
+</policy-condition>
+</warning-execution-criteria>
+</health-rule>
+
+
+<health-rule>
+<name>Availability_new_mbbb_rpc</name>
+<type>OTHER</type>
+<description/>
+<enabled>true</enabled>
+<is-default>false</is-default>
+<always-enabled>true</always-enabled>
+<duration-min>20</duration-min>
+<wait-time-min>30</wait-time-min>
+<affected-entities-match-criteria>
+<other-affected-entities-match-criteria>
+<entity>
+<entity-type>APPLICATION</entity-type>
+</entity>
+</other-affected-entities-match-criteria>
+</affected-entities-match-criteria>
+<critical-execution-criteria>
+<entity-aggregation-scope>
+<type>ANY</type>
+<value>0</value>
+</entity-aggregation-scope>
+<policy-condition>
+<type>leaf</type>
+<display-name>testFailed</display-name>
+<condition-value-type>ABSOLUTE</condition-value-type>
+<condition-value>2.0</condition-value>
+<operator>GREATER_THAN</operator>
+<condition-expression/>
+<use-active-baseline>false</use-active-baseline>
+<metric-expression>
+<type>leaf</type>
+<function-type>SUM</function-type>
+<value>0</value>
+<is-literal-expression>false</is-literal-expression>
+<display-name>null</display-name>
+<metric-definition>
+<type>ABSOLUTE_METRIC_SCOPE</type>
+<logical-metric-name>Application Infrastructure Performance|AppDynamicsVM|Custom Metrics|URL Monitor|NEW_MBBB_RPC|Pattern Matches|TestFailed|Count</logical-metric-name>
+<metric-name>Custom Metrics|URL Monitor|NEW_MBBB_RPC|Pattern Matches|TestFailed|Count</metric-name>
+<entity>
+<entity-type>APPLICATION_COMPONENT</entity-type>
+<application-component>AppDynamicsVM</application-component>
+</entity>
+</metric-definition>
+</metric-expression>
+</policy-condition>
+</critical-execution-criteria>
+<warning-execution-criteria>
+<entity-aggregation-scope>
+<type>ANY</type>
+<value>0</value>
+</entity-aggregation-scope>
+<policy-condition>
+<type>leaf</type>
+<display-name>statusNotSuccesful</display-name>
+<condition-value-type>ABSOLUTE</condition-value-type>
+<condition-value>15.0</condition-value>
+<operator>LESS_THAN</operator>
+<condition-expression/>
+<use-active-baseline>false</use-active-baseline>
+<metric-expression>
+<type>leaf</type>
+<function-type>SUM</function-type>
+<value>0</value>
+<is-literal-expression>false</is-literal-expression>
+<display-name>null</display-name>
+<metric-definition>
+<type>ABSOLUTE_METRIC_SCOPE</type>
+<logical-metric-name>Application Infrastructure Performance|AppDynamicsVM|Custom Metrics|URL Monitor|NEW_MBBB_RPC|Status</logical-metric-name>
+<metric-name>Custom Metrics|URL Monitor|NEW_MBBB_RPC|Status</metric-name>
+<entity>
+<entity-type>APPLICATION_COMPONENT</entity-type>
+<application-component>AppDynamicsVM</application-component>
+</entity>
+</metric-definition>
+</metric-expression>
+</policy-condition>
+</warning-execution-criteria>
+</health-rule>
+
+
+<health-rule>
+<name>Availability_new_mbbb_rdt</name>
+<type>OTHER</type>
+<description/>
+<enabled>true</enabled>
+<is-default>false</is-default>
+<always-enabled>true</always-enabled>
+<duration-min>20</duration-min>
+<wait-time-min>30</wait-time-min>
+<affected-entities-match-criteria>
+<other-affected-entities-match-criteria>
+<entity>
+<entity-type>APPLICATION</entity-type>
+</entity>
+</other-affected-entities-match-criteria>
+</affected-entities-match-criteria>
+<critical-execution-criteria>
+<entity-aggregation-scope>
+<type>ANY</type>
+<value>0</value>
+</entity-aggregation-scope>
+<policy-condition>
+<type>leaf</type>
+<display-name>testFailed</display-name>
+<condition-value-type>ABSOLUTE</condition-value-type>
+<condition-value>2.0</condition-value>
+<operator>GREATER_THAN</operator>
+<condition-expression/>
+<use-active-baseline>false</use-active-baseline>
+<metric-expression>
+<type>leaf</type>
+<function-type>SUM</function-type>
+<value>0</value>
+<is-literal-expression>false</is-literal-expression>
+<display-name>null</display-name>
+<metric-definition>
+<type>ABSOLUTE_METRIC_SCOPE</type>
+<logical-metric-name>Application Infrastructure Performance|AppDynamicsVM|Custom Metrics|URL Monitor|NEW_MBBB_RDT|Pattern Matches|TestFailed|Count</logical-metric-name>
+<metric-name>Custom Metrics|URL Monitor|NEW_MBBB_RDT|Pattern Matches|TestFailed|Count</metric-name>
+<entity>
+<entity-type>APPLICATION_COMPONENT</entity-type>
+<application-component>AppDynamicsVM</application-component>
+</entity>
+</metric-definition>
+</metric-expression>
+</policy-condition>
+</critical-execution-criteria>
+<warning-execution-criteria>
+<entity-aggregation-scope>
+<type>ANY</type>
+<value>0</value>
+</entity-aggregation-scope>
+<policy-condition>
+<type>leaf</type>
+<display-name>statusNotSuccesful</display-name>
+<condition-value-type>ABSOLUTE</condition-value-type>
+<condition-value>15.0</condition-value>
+<operator>LESS_THAN</operator>
+<condition-expression/>
+<use-active-baseline>false</use-active-baseline>
+<metric-expression>
+<type>leaf</type>
+<function-type>SUM</function-type>
+<value>0</value>
+<is-literal-expression>false</is-literal-expression>
+<display-name>null</display-name>
+<metric-definition>
+<type>ABSOLUTE_METRIC_SCOPE</type>
+<logical-metric-name>Application Infrastructure Performance|AppDynamicsVM|Custom Metrics|URL Monitor|NEW_MBBB_RDT|Status</logical-metric-name>
+<metric-name>Custom Metrics|URL Monitor|NEW_MBBB_RDT|Status</metric-name>
+<entity>
+<entity-type>APPLICATION_COMPONENT</entity-type>
+<application-component>AppDynamicsVM</application-component>
+</entity>
+</metric-definition>
+</metric-expression>
+</policy-condition>
+</warning-execution-criteria>
+</health-rule>
+
+
+<health-rule>
+<name>Availability_new_mbbb_geofen</name>
+<type>OTHER</type>
+<description/>
+<enabled>true</enabled>
+<is-default>false</is-default>
+<always-enabled>true</always-enabled>
+<duration-min>20</duration-min>
+<wait-time-min>30</wait-time-min>
+<affected-entities-match-criteria>
+<other-affected-entities-match-criteria>
+<entity>
+<entity-type>APPLICATION</entity-type>
+</entity>
+</other-affected-entities-match-criteria>
+</affected-entities-match-criteria>
+<critical-execution-criteria>
+<entity-aggregation-scope>
+<type>ANY</type>
+<value>0</value>
+</entity-aggregation-scope>
+<policy-condition>
+<type>leaf</type>
+<display-name>testFailed</display-name>
+<condition-value-type>ABSOLUTE</condition-value-type>
+<condition-value>2.0</condition-value>
+<operator>GREATER_THAN</operator>
+<condition-expression/>
+<use-active-baseline>false</use-active-baseline>
+<metric-expression>
+<type>leaf</type>
+<function-type>SUM</function-type>
+<value>0</value>
+<is-literal-expression>false</is-literal-expression>
+<display-name>null</display-name>
+<metric-definition>
+<type>ABSOLUTE_METRIC_SCOPE</type>
+<logical-metric-name>Application Infrastructure Performance|AppDynamicsVM|Custom Metrics|URL Monitor|NEW_MBBB_GEOFEN|Pattern Matches|TestFailed|Count</logical-metric-name>
+<metric-name>Custom Metrics|URL Monitor|NEW_MBBB_GEOFEN|Pattern Matches|TestFailed|Count</metric-name>
+<entity>
+<entity-type>APPLICATION_COMPONENT</entity-type>
+<application-component>AppDynamicsVM</application-component>
+</entity>
+</metric-definition>
+</metric-expression>
+</policy-condition>
+</critical-execution-criteria>
+<warning-execution-criteria>
+<entity-aggregation-scope>
+<type>ANY</type>
+<value>0</value>
+</entity-aggregation-scope>
+<policy-condition>
+<type>leaf</type>
+<display-name>statusNotSuccesful</display-name>
+<condition-value-type>ABSOLUTE</condition-value-type>
+<condition-value>15.0</condition-value>
+<operator>LESS_THAN</operator>
+<condition-expression/>
+<use-active-baseline>false</use-active-baseline>
+<metric-expression>
+<type>leaf</type>
+<function-type>SUM</function-type>
+<value>0</value>
+<is-literal-expression>false</is-literal-expression>
+<display-name>null</display-name>
+<metric-definition>
+<type>ABSOLUTE_METRIC_SCOPE</type>
+<logical-metric-name>Application Infrastructure Performance|AppDynamicsVM|Custom Metrics|URL Monitor|NEW_MBBB_GEOFEN|Status</logical-metric-name>
+<metric-name>Custom Metrics|URL Monitor|NEW_MBBB_GEOFEN|Status</metric-name>
+<entity>
+<entity-type>APPLICATION_COMPONENT</entity-type>
+<application-component>AppDynamicsVM</application-component>
+</entity>
+</metric-definition>
+</metric-expression>
+</policy-condition>
+</warning-execution-criteria>
+</health-rule>
+
+
+<health-rule>
+<name>Availability_new_mbbb_speeda</name>
+<type>OTHER</type>
+<description/>
+<enabled>true</enabled>
+<is-default>false</is-default>
+<always-enabled>true</always-enabled>
+<duration-min>20</duration-min>
+<wait-time-min>30</wait-time-min>
+<affected-entities-match-criteria>
+<other-affected-entities-match-criteria>
+<entity>
+<entity-type>APPLICATION</entity-type>
+</entity>
+</other-affected-entities-match-criteria>
+</affected-entities-match-criteria>
+<critical-execution-criteria>
+<entity-aggregation-scope>
+<type>ANY</type>
+<value>0</value>
+</entity-aggregation-scope>
+<policy-condition>
+<type>leaf</type>
+<display-name>testFailed</display-name>
+<condition-value-type>ABSOLUTE</condition-value-type>
+<condition-value>2.0</condition-value>
+<operator>GREATER_THAN</operator>
+<condition-expression/>
+<use-active-baseline>false</use-active-baseline>
+<metric-expression>
+<type>leaf</type>
+<function-type>SUM</function-type>
+<value>0</value>
+<is-literal-expression>false</is-literal-expression>
+<display-name>null</display-name>
+<metric-definition>
+<type>ABSOLUTE_METRIC_SCOPE</type>
+<logical-metric-name>Application Infrastructure Performance|AppDynamicsVM|Custom Metrics|URL Monitor|NEW_MBBB_SPEEDA|Pattern Matches|TestFailed|Count</logical-metric-name>
+<metric-name>Custom Metrics|URL Monitor|NEW_MBBB_SPEEDA|Pattern Matches|TestFailed|Count</metric-name>
+<entity>
+<entity-type>APPLICATION_COMPONENT</entity-type>
+<application-component>AppDynamicsVM</application-component>
+</entity>
+</metric-definition>
+</metric-expression>
+</policy-condition>
+</critical-execution-criteria>
+<warning-execution-criteria>
+<entity-aggregation-scope>
+<type>ANY</type>
+<value>0</value>
+</entity-aggregation-scope>
+<policy-condition>
+<type>leaf</type>
+<display-name>statusNotSuccesful</display-name>
+<condition-value-type>ABSOLUTE</condition-value-type>
+<condition-value>15.0</condition-value>
+<operator>LESS_THAN</operator>
+<condition-expression/>
+<use-active-baseline>false</use-active-baseline>
+<metric-expression>
+<type>leaf</type>
+<function-type>SUM</function-type>
+<value>0</value>
+<is-literal-expression>false</is-literal-expression>
+<display-name>null</display-name>
+<metric-definition>
+<type>ABSOLUTE_METRIC_SCOPE</type>
+<logical-metric-name>Application Infrastructure Performance|AppDynamicsVM|Custom Metrics|URL Monitor|NEW_MBBB_SPEEDA|Status</logical-metric-name>
+<metric-name>Custom Metrics|URL Monitor|NEW_MBBB_SPEEDA|Status</metric-name>
+<entity>
+<entity-type>APPLICATION_COMPONENT</entity-type>
+<application-component>AppDynamicsVM</application-component>
+</entity>
+</metric-definition>
+</metric-expression>
+</policy-condition>
+</warning-execution-criteria>
+</health-rule>
+
+
+<health-rule>
+<name>Availability_new_mbbb_rvt</name>
+<type>OTHER</type>
+<description/>
+<enabled>true</enabled>
+<is-default>false</is-default>
+<always-enabled>true</always-enabled>
+<duration-min>20</duration-min>
+<wait-time-min>30</wait-time-min>
+<affected-entities-match-criteria>
+<other-affected-entities-match-criteria>
+<entity>
+<entity-type>APPLICATION</entity-type>
+</entity>
+</other-affected-entities-match-criteria>
+</affected-entities-match-criteria>
+<critical-execution-criteria>
+<entity-aggregation-scope>
+<type>ANY</type>
+<value>0</value>
+</entity-aggregation-scope>
+<policy-condition>
+<type>leaf</type>
+<display-name>testFailed</display-name>
+<condition-value-type>ABSOLUTE</condition-value-type>
+<condition-value>2.0</condition-value>
+<operator>GREATER_THAN</operator>
+<condition-expression/>
+<use-active-baseline>false</use-active-baseline>
+<metric-expression>
+<type>leaf</type>
+<function-type>SUM</function-type>
+<value>0</value>
+<is-literal-expression>false</is-literal-expression>
+<display-name>null</display-name>
+<metric-definition>
+<type>ABSOLUTE_METRIC_SCOPE</type>
+<logical-metric-name>Application Infrastructure Performance|AppDynamicsVM|Custom Metrics|URL Monitor|NEW_MBBB_RVT|Pattern Matches|TestFailed|Count</logical-metric-name>
+<metric-name>Custom Metrics|URL Monitor|NEW_MBBB_RVT|Pattern Matches|TestFailed|Count</metric-name>
+<entity>
+<entity-type>APPLICATION_COMPONENT</entity-type>
+<application-component>AppDynamicsVM</application-component>
+</entity>
+</metric-definition>
+</metric-expression>
+</policy-condition>
+</critical-execution-criteria>
+<warning-execution-criteria>
+<entity-aggregation-scope>
+<type>ANY</type>
+<value>0</value>
+</entity-aggregation-scope>
+<policy-condition>
+<type>leaf</type>
+<display-name>statusNotSuccesful</display-name>
+<condition-value-type>ABSOLUTE</condition-value-type>
+<condition-value>15.0</condition-value>
+<operator>LESS_THAN</operator>
+<condition-expression/>
+<use-active-baseline>false</use-active-baseline>
+<metric-expression>
+<type>leaf</type>
+<function-type>SUM</function-type>
+<value>0</value>
+<is-literal-expression>false</is-literal-expression>
+<display-name>null</display-name>
+<metric-definition>
+<type>ABSOLUTE_METRIC_SCOPE</type>
+<logical-metric-name>Application Infrastructure Performance|AppDynamicsVM|Custom Metrics|URL Monitor|NEW_MBBB_RVT|Status</logical-metric-name>
+<metric-name>Custom Metrics|URL Monitor|NEW_MBBB_RVT|Status</metric-name>
+<entity>
+<entity-type>APPLICATION_COMPONENT</entity-type>
+<application-component>AppDynamicsVM</application-component>
+</entity>
+</metric-definition>
+</metric-expression>
+</policy-condition>
+</warning-execution-criteria>
+</health-rule>
+
+
+<health-rule>
+<name>Availability_new_mbbb_ecall</name>
+<type>OTHER</type>
+<description/>
+<enabled>true</enabled>
+<is-default>false</is-default>
+<always-enabled>true</always-enabled>
+<duration-min>20</duration-min>
+<wait-time-min>30</wait-time-min>
+<affected-entities-match-criteria>
+<other-affected-entities-match-criteria>
+<entity>
+<entity-type>APPLICATION</entity-type>
+</entity>
+</other-affected-entities-match-criteria>
+</affected-entities-match-criteria>
+<critical-execution-criteria>
+<entity-aggregation-scope>
+<type>ANY</type>
+<value>0</value>
+</entity-aggregation-scope>
+<policy-condition>
+<type>leaf</type>
+<display-name>testFailed</display-name>
+<condition-value-type>ABSOLUTE</condition-value-type>
+<condition-value>2.0</condition-value>
+<operator>GREATER_THAN</operator>
+<condition-expression/>
+<use-active-baseline>false</use-active-baseline>
+<metric-expression>
+<type>leaf</type>
+<function-type>SUM</function-type>
+<value>0</value>
+<is-literal-expression>false</is-literal-expression>
+<display-name>null</display-name>
+<metric-definition>
+<type>ABSOLUTE_METRIC_SCOPE</type>
+<logical-metric-name>Application Infrastructure Performance|AppDynamicsVM|Custom Metrics|URL Monitor|NEW_MBBB_ECALL|Pattern Matches|TestFailed|Count</logical-metric-name>
+<metric-name>Custom Metrics|URL Monitor|NEW_MBBB_ECALL|Pattern Matches|TestFailed|Count</metric-name>
+<entity>
+<entity-type>APPLICATION_COMPONENT</entity-type>
+<application-component>AppDynamicsVM</application-component>
+</entity>
+</metric-definition>
+</metric-expression>
+</policy-condition>
+</critical-execution-criteria>
+<warning-execution-criteria>
+<entity-aggregation-scope>
+<type>ANY</type>
+<value>0</value>
+</entity-aggregation-scope>
+<policy-condition>
+<type>leaf</type>
+<display-name>statusNotSuccesful</display-name>
+<condition-value-type>ABSOLUTE</condition-value-type>
+<condition-value>15.0</condition-value>
+<operator>LESS_THAN</operator>
+<condition-expression/>
+<use-active-baseline>false</use-active-baseline>
+<metric-expression>
+<type>leaf</type>
+<function-type>SUM</function-type>
+<value>0</value>
+<is-literal-expression>false</is-literal-expression>
+<display-name>null</display-name>
+<metric-definition>
+<type>ABSOLUTE_METRIC_SCOPE</type>
+<logical-metric-name>Application Infrastructure Performance|AppDynamicsVM|Custom Metrics|URL Monitor|NEW_MBBB_ECALL|Status</logical-metric-name>
+<metric-name>Custom Metrics|URL Monitor|NEW_MBBB_ECALL|Status</metric-name>
+<entity>
+<entity-type>APPLICATION_COMPONENT</entity-type>
+<application-component>AppDynamicsVM</application-component>
+</entity>
+</metric-definition>
+</metric-expression>
+</policy-condition>
+</warning-execution-criteria>
+</health-rule>
+
+
+<health-rule>
+<name>Availability_new_mbbb_valeta</name>
+<type>OTHER</type>
+<description/>
+<enabled>true</enabled>
+<is-default>false</is-default>
+<always-enabled>true</always-enabled>
+<duration-min>20</duration-min>
+<wait-time-min>30</wait-time-min>
+<affected-entities-match-criteria>
+<other-affected-entities-match-criteria>
+<entity>
+<entity-type>APPLICATION</entity-type>
+</entity>
+</other-affected-entities-match-criteria>
+</affected-entities-match-criteria>
+<critical-execution-criteria>
+<entity-aggregation-scope>
+<type>ANY</type>
+<value>0</value>
+</entity-aggregation-scope>
+<policy-condition>
+<type>leaf</type>
+<display-name>testFailed</display-name>
+<condition-value-type>ABSOLUTE</condition-value-type>
+<condition-value>2.0</condition-value>
+<operator>GREATER_THAN</operator>
+<condition-expression/>
+<use-active-baseline>false</use-active-baseline>
+<metric-expression>
+<type>leaf</type>
+<function-type>SUM</function-type>
+<value>0</value>
+<is-literal-expression>false</is-literal-expression>
+<display-name>null</display-name>
+<metric-definition>
+<type>ABSOLUTE_METRIC_SCOPE</type>
+<logical-metric-name>Application Infrastructure Performance|AppDynamicsVM|Custom Metrics|URL Monitor|NEW_MBBB_VALETA|Pattern Matches|TestFailed|Count</logical-metric-name>
+<metric-name>Custom Metrics|URL Monitor|NEW_MBBB_VALETA|Pattern Matches|TestFailed|Count</metric-name>
+<entity>
+<entity-type>APPLICATION_COMPONENT</entity-type>
+<application-component>AppDynamicsVM</application-component>
+</entity>
+</metric-definition>
+</metric-expression>
+</policy-condition>
+</critical-execution-criteria>
+<warning-execution-criteria>
+<entity-aggregation-scope>
+<type>ANY</type>
+<value>0</value>
+</entity-aggregation-scope>
+<policy-condition>
+<type>leaf</type>
+<display-name>statusNotSuccesful</display-name>
+<condition-value-type>ABSOLUTE</condition-value-type>
+<condition-value>15.0</condition-value>
+<operator>LESS_THAN</operator>
+<condition-expression/>
+<use-active-baseline>false</use-active-baseline>
+<metric-expression>
+<type>leaf</type>
+<function-type>SUM</function-type>
+<value>0</value>
+<is-literal-expression>false</is-literal-expression>
+<display-name>null</display-name>
+<metric-definition>
+<type>ABSOLUTE_METRIC_SCOPE</type>
+<logical-metric-name>Application Infrastructure Performance|AppDynamicsVM|Custom Metrics|URL Monitor|NEW_MBBB_VALETA|Status</logical-metric-name>
+<metric-name>Custom Metrics|URL Monitor|NEW_MBBB_VALETA|Status</metric-name>
+<entity>
+<entity-type>APPLICATION_COMPONENT</entity-type>
+<application-component>AppDynamicsVM</application-component>
+</entity>
+</metric-definition>
+</metric-expression>
+</policy-condition>
+</warning-execution-criteria>
+</health-rule>
+
+
+<health-rule>
+<name>Availability_new_mbbb_efpi</name>
+<type>OTHER</type>
+<description/>
+<enabled>true</enabled>
+<is-default>false</is-default>
+<always-enabled>true</always-enabled>
+<duration-min>20</duration-min>
+<wait-time-min>30</wait-time-min>
+<affected-entities-match-criteria>
+<other-affected-entities-match-criteria>
+<entity>
+<entity-type>APPLICATION</entity-type>
+</entity>
+</other-affected-entities-match-criteria>
+</affected-entities-match-criteria>
+<critical-execution-criteria>
+<entity-aggregation-scope>
+<type>ANY</type>
+<value>0</value>
+</entity-aggregation-scope>
+<policy-condition>
+<type>leaf</type>
+<display-name>testFailed</display-name>
+<condition-value-type>ABSOLUTE</condition-value-type>
+<condition-value>2.0</condition-value>
+<operator>GREATER_THAN</operator>
+<condition-expression/>
+<use-active-baseline>false</use-active-baseline>
+<metric-expression>
+<type>leaf</type>
+<function-type>SUM</function-type>
+<value>0</value>
+<is-literal-expression>false</is-literal-expression>
+<display-name>null</display-name>
+<metric-definition>
+<type>ABSOLUTE_METRIC_SCOPE</type>
+<logical-metric-name>Application Infrastructure Performance|AppDynamicsVM|Custom Metrics|URL Monitor|NEW_MBBB_EFPI|Pattern Matches|TestFailed|Count</logical-metric-name>
+<metric-name>Custom Metrics|URL Monitor|NEW_MBBB_EFPI|Pattern Matches|TestFailed|Count</metric-name>
+<entity>
+<entity-type>APPLICATION_COMPONENT</entity-type>
+<application-component>AppDynamicsVM</application-component>
+</entity>
+</metric-definition>
+</metric-expression>
+</policy-condition>
+</critical-execution-criteria>
+<warning-execution-criteria>
+<entity-aggregation-scope>
+<type>ANY</type>
+<value>0</value>
+</entity-aggregation-scope>
+<policy-condition>
+<type>leaf</type>
+<display-name>statusNotSuccesful</display-name>
+<condition-value-type>ABSOLUTE</condition-value-type>
+<condition-value>15.0</condition-value>
+<operator>LESS_THAN</operator>
+<condition-expression/>
+<use-active-baseline>false</use-active-baseline>
+<metric-expression>
+<type>leaf</type>
+<function-type>SUM</function-type>
+<value>0</value>
+<is-literal-expression>false</is-literal-expression>
+<display-name>null</display-name>
+<metric-definition>
+<type>ABSOLUTE_METRIC_SCOPE</type>
+<logical-metric-name>Application Infrastructure Performance|AppDynamicsVM|Custom Metrics|URL Monitor|NEW_MBBB_EFPI|Status</logical-metric-name>
+<metric-name>Custom Metrics|URL Monitor|NEW_MBBB_EFPI|Status</metric-name>
+<entity>
+<entity-type>APPLICATION_COMPONENT</entity-type>
+<application-component>AppDynamicsVM</application-component>
+</entity>
+</metric-definition>
+</metric-expression>
+</policy-condition>
+</warning-execution-criteria>
+</health-rule>
+
+
+<health-rule>
+<name>Availability_new_mbbc_logacc</name>
+<type>OTHER</type>
+<description/>
+<enabled>true</enabled>
+<is-default>false</is-default>
+<always-enabled>true</always-enabled>
+<duration-min>20</duration-min>
+<wait-time-min>30</wait-time-min>
+<affected-entities-match-criteria>
+<other-affected-entities-match-criteria>
+<entity>
+<entity-type>APPLICATION</entity-type>
+</entity>
+</other-affected-entities-match-criteria>
+</affected-entities-match-criteria>
+<critical-execution-criteria>
+<entity-aggregation-scope>
+<type>ANY</type>
+<value>0</value>
+</entity-aggregation-scope>
+<policy-condition>
+<type>leaf</type>
+<display-name>testFailed</display-name>
+<condition-value-type>ABSOLUTE</condition-value-type>
+<condition-value>2.0</condition-value>
+<operator>GREATER_THAN</operator>
+<condition-expression/>
+<use-active-baseline>false</use-active-baseline>
+<metric-expression>
+<type>leaf</type>
+<function-type>SUM</function-type>
+<value>0</value>
+<is-literal-expression>false</is-literal-expression>
+<display-name>null</display-name>
+<metric-definition>
+<type>ABSOLUTE_METRIC_SCOPE</type>
+<logical-metric-name>Application Infrastructure Performance|AppDynamicsVM|Custom Metrics|URL Monitor|NEW_MBBC_LOGACC|Pattern Matches|TestFailed|Count</logical-metric-name>
+<metric-name>Custom Metrics|URL Monitor|NEW_MBBC_LOGACC|Pattern Matches|TestFailed|Count</metric-name>
+<entity>
+<entity-type>APPLICATION_COMPONENT</entity-type>
+<application-component>AppDynamicsVM</application-component>
+</entity>
+</metric-definition>
+</metric-expression>
+</policy-condition>
+</critical-execution-criteria>
+<warning-execution-criteria>
+<entity-aggregation-scope>
+<type>ANY</type>
+<value>0</value>
+</entity-aggregation-scope>
+<policy-condition>
+<type>leaf</type>
+<display-name>statusNotSuccesful</display-name>
+<condition-value-type>ABSOLUTE</condition-value-type>
+<condition-value>15.0</condition-value>
+<operator>LESS_THAN</operator>
+<condition-expression/>
+<use-active-baseline>false</use-active-baseline>
+<metric-expression>
+<type>leaf</type>
+<function-type>SUM</function-type>
+<value>0</value>
+<is-literal-expression>false</is-literal-expression>
+<display-name>null</display-name>
+<metric-definition>
+<type>ABSOLUTE_METRIC_SCOPE</type>
+<logical-metric-name>Application Infrastructure Performance|AppDynamicsVM|Custom Metrics|URL Monitor|NEW_MBBC_LOGACC|Status</logical-metric-name>
+<metric-name>Custom Metrics|URL Monitor|NEW_MBBC_LOGACC|Status</metric-name>
+<entity>
+<entity-type>APPLICATION_COMPONENT</entity-type>
+<application-component>AppDynamicsVM</application-component>
+</entity>
+</metric-definition>
+</metric-expression>
+</policy-condition>
+</warning-execution-criteria>
+</health-rule>
+
+
+<health-rule>
+<name>Availability_new_mbbc_padi</name>
+<type>OTHER</type>
+<description/>
+<enabled>true</enabled>
+<is-default>false</is-default>
+<always-enabled>true</always-enabled>
+<duration-min>20</duration-min>
+<wait-time-min>30</wait-time-min>
+<affected-entities-match-criteria>
+<other-affected-entities-match-criteria>
+<entity>
+<entity-type>APPLICATION</entity-type>
+</entity>
+</other-affected-entities-match-criteria>
+</affected-entities-match-criteria>
+<critical-execution-criteria>
+<entity-aggregation-scope>
+<type>ANY</type>
+<value>0</value>
+</entity-aggregation-scope>
+<policy-condition>
+<type>leaf</type>
+<display-name>testFailed</display-name>
+<condition-value-type>ABSOLUTE</condition-value-type>
+<condition-value>2.0</condition-value>
+<operator>GREATER_THAN</operator>
+<condition-expression/>
+<use-active-baseline>false</use-active-baseline>
+<metric-expression>
+<type>leaf</type>
+<function-type>SUM</function-type>
+<value>0</value>
+<is-literal-expression>false</is-literal-expression>
+<display-name>null</display-name>
+<metric-definition>
+<type>ABSOLUTE_METRIC_SCOPE</type>
+<logical-metric-name>Application Infrastructure Performance|AppDynamicsVM|Custom Metrics|URL Monitor|NEW_MBBC_PADI|Pattern Matches|TestFailed|Count</logical-metric-name>
+<metric-name>Custom Metrics|URL Monitor|NEW_MBBC_PADI|Pattern Matches|TestFailed|Count</metric-name>
+<entity>
+<entity-type>APPLICATION_COMPONENT</entity-type>
+<application-component>AppDynamicsVM</application-component>
+</entity>
+</metric-definition>
+</metric-expression>
+</policy-condition>
+</critical-execution-criteria>
+<warning-execution-criteria>
+<entity-aggregation-scope>
+<type>ANY</type>
+<value>0</value>
+</entity-aggregation-scope>
+<policy-condition>
+<type>leaf</type>
+<display-name>statusNotSuccesful</display-name>
+<condition-value-type>ABSOLUTE</condition-value-type>
+<condition-value>15.0</condition-value>
+<operator>LESS_THAN</operator>
+<condition-expression/>
+<use-active-baseline>false</use-active-baseline>
+<metric-expression>
+<type>leaf</type>
+<function-type>SUM</function-type>
+<value>0</value>
+<is-literal-expression>false</is-literal-expression>
+<display-name>null</display-name>
+<metric-definition>
+<type>ABSOLUTE_METRIC_SCOPE</type>
+<logical-metric-name>Application Infrastructure Performance|AppDynamicsVM|Custom Metrics|URL Monitor|NEW_MBBC_PADI|Status</logical-metric-name>
+<metric-name>Custom Metrics|URL Monitor|NEW_MBBC_PADI|Status</metric-name>
+<entity>
+<entity-type>APPLICATION_COMPONENT</entity-type>
+<application-component>AppDynamicsVM</application-component>
+</entity>
+</metric-definition>
+</metric-expression>
+</policy-condition>
+</warning-execution-criteria>
+</health-rule>
+
+
+<health-rule>
+<name>Availability_new_mbbc_mgmt</name>
+<type>OTHER</type>
+<description/>
+<enabled>true</enabled>
+<is-default>false</is-default>
+<always-enabled>true</always-enabled>
+<duration-min>20</duration-min>
+<wait-time-min>30</wait-time-min>
+<affected-entities-match-criteria>
+<other-affected-entities-match-criteria>
+<entity>
+<entity-type>APPLICATION</entity-type>
+</entity>
+</other-affected-entities-match-criteria>
+</affected-entities-match-criteria>
+<critical-execution-criteria>
+<entity-aggregation-scope>
+<type>ANY</type>
+<value>0</value>
+</entity-aggregation-scope>
+<policy-condition>
+<type>leaf</type>
+<display-name>testFailed</display-name>
+<condition-value-type>ABSOLUTE</condition-value-type>
+<condition-value>2.0</condition-value>
+<operator>GREATER_THAN</operator>
+<condition-expression/>
+<use-active-baseline>false</use-active-baseline>
+<metric-expression>
+<type>leaf</type>
+<function-type>SUM</function-type>
+<value>0</value>
+<is-literal-expression>false</is-literal-expression>
+<display-name>null</display-name>
+<metric-definition>
+<type>ABSOLUTE_METRIC_SCOPE</type>
+<logical-metric-name>Application Infrastructure Performance|AppDynamicsVM|Custom Metrics|URL Monitor|NEW_MBBC_MGMT|Pattern Matches|TestFailed|Count</logical-metric-name>
+<metric-name>Custom Metrics|URL Monitor|NEW_MBBC_MGMT|Pattern Matches|TestFailed|Count</metric-name>
+<entity>
+<entity-type>APPLICATION_COMPONENT</entity-type>
+<application-component>AppDynamicsVM</application-component>
+</entity>
+</metric-definition>
+</metric-expression>
+</policy-condition>
+</critical-execution-criteria>
+<warning-execution-criteria>
+<entity-aggregation-scope>
+<type>ANY</type>
+<value>0</value>
+</entity-aggregation-scope>
+<policy-condition>
+<type>leaf</type>
+<display-name>statusNotSuccesful</display-name>
+<condition-value-type>ABSOLUTE</condition-value-type>
+<condition-value>15.0</condition-value>
+<operator>LESS_THAN</operator>
+<condition-expression/>
+<use-active-baseline>false</use-active-baseline>
+<metric-expression>
+<type>leaf</type>
+<function-type>SUM</function-type>
+<value>0</value>
+<is-literal-expression>false</is-literal-expression>
+<display-name>null</display-name>
+<metric-definition>
+<type>ABSOLUTE_METRIC_SCOPE</type>
+<logical-metric-name>Application Infrastructure Performance|AppDynamicsVM|Custom Metrics|URL Monitor|NEW_MBBC_MGMT|Status</logical-metric-name>
+<metric-name>Custom Metrics|URL Monitor|NEW_MBBC_MGMT|Status</metric-name>
+<entity>
+<entity-type>APPLICATION_COMPONENT</entity-type>
+<application-component>AppDynamicsVM</application-component>
+</entity>
+</metric-definition>
+</metric-expression>
+</policy-condition>
+</warning-execution-criteria>
+</health-rule>
+
+
+<health-rule>
+<name>Availability_new_mbbc_soko</name>
+<type>OTHER</type>
+<description/>
+<enabled>true</enabled>
+<is-default>false</is-default>
+<always-enabled>true</always-enabled>
+<duration-min>20</duration-min>
+<wait-time-min>30</wait-time-min>
+<affected-entities-match-criteria>
+<other-affected-entities-match-criteria>
+<entity>
+<entity-type>APPLICATION</entity-type>
+</entity>
+</other-affected-entities-match-criteria>
+</affected-entities-match-criteria>
+<critical-execution-criteria>
+<entity-aggregation-scope>
+<type>ANY</type>
+<value>0</value>
+</entity-aggregation-scope>
+<policy-condition>
+<type>leaf</type>
+<display-name>testFailed</display-name>
+<condition-value-type>ABSOLUTE</condition-value-type>
+<condition-value>2.0</condition-value>
+<operator>GREATER_THAN</operator>
+<condition-expression/>
+<use-active-baseline>false</use-active-baseline>
+<metric-expression>
+<type>leaf</type>
+<function-type>SUM</function-type>
+<value>0</value>
+<is-literal-expression>false</is-literal-expression>
+<display-name>null</display-name>
+<metric-definition>
+<type>ABSOLUTE_METRIC_SCOPE</type>
+<logical-metric-name>Application Infrastructure Performance|AppDynamicsVM|Custom Metrics|URL Monitor|NEW_MBBC_SOKO|Pattern Matches|TestFailed|Count</logical-metric-name>
+<metric-name>Custom Metrics|URL Monitor|NEW_MBBC_SOKO|Pattern Matches|TestFailed|Count</metric-name>
+<entity>
+<entity-type>APPLICATION_COMPONENT</entity-type>
+<application-component>AppDynamicsVM</application-component>
+</entity>
+</metric-definition>
+</metric-expression>
+</policy-condition>
+</critical-execution-criteria>
+<warning-execution-criteria>
+<entity-aggregation-scope>
+<type>ANY</type>
+<value>0</value>
+</entity-aggregation-scope>
+<policy-condition>
+<type>leaf</type>
+<display-name>statusNotSuccesful</display-name>
+<condition-value-type>ABSOLUTE</condition-value-type>
+<condition-value>15.0</condition-value>
+<operator>LESS_THAN</operator>
+<condition-expression/>
+<use-active-baseline>false</use-active-baseline>
+<metric-expression>
+<type>leaf</type>
+<function-type>SUM</function-type>
+<value>0</value>
+<is-literal-expression>false</is-literal-expression>
+<display-name>null</display-name>
+<metric-definition>
+<type>ABSOLUTE_METRIC_SCOPE</type>
+<logical-metric-name>Application Infrastructure Performance|AppDynamicsVM|Custom Metrics|URL Monitor|NEW_MBBC_SOKO|Status</logical-metric-name>
+<metric-name>Custom Metrics|URL Monitor|NEW_MBBC_SOKO|Status</metric-name>
+<entity>
+<entity-type>APPLICATION_COMPONENT</entity-type>
+<application-component>AppDynamicsVM</application-component>
+</entity>
+</metric-definition>
+</metric-expression>
+</policy-condition>
+</warning-execution-criteria>
+</health-rule>
+
+
+<health-rule>
+<name>Availability_new_mbbc_rucm</name>
+<type>OTHER</type>
+<description/>
+<enabled>true</enabled>
+<is-default>false</is-default>
+<always-enabled>true</always-enabled>
+<duration-min>20</duration-min>
+<wait-time-min>30</wait-time-min>
+<affected-entities-match-criteria>
+<other-affected-entities-match-criteria>
+<entity>
+<entity-type>APPLICATION</entity-type>
+</entity>
+</other-affected-entities-match-criteria>
+</affected-entities-match-criteria>
+<critical-execution-criteria>
+<entity-aggregation-scope>
+<type>ANY</type>
+<value>0</value>
+</entity-aggregation-scope>
+<policy-condition>
+<type>leaf</type>
+<display-name>testFailed</display-name>
+<condition-value-type>ABSOLUTE</condition-value-type>
+<condition-value>2.0</condition-value>
+<operator>GREATER_THAN</operator>
+<condition-expression/>
+<use-active-baseline>false</use-active-baseline>
+<metric-expression>
+<type>leaf</type>
+<function-type>SUM</function-type>
+<value>0</value>
+<is-literal-expression>false</is-literal-expression>
+<display-name>null</display-name>
+<metric-definition>
+<type>ABSOLUTE_METRIC_SCOPE</type>
+<logical-metric-name>Application Infrastructure Performance|AppDynamicsVM|Custom Metrics|URL Monitor|NEW_MBBC_RUCM|Pattern Matches|TestFailed|Count</logical-metric-name>
+<metric-name>Custom Metrics|URL Monitor|NEW_MBBC_RUCM|Pattern Matches|TestFailed|Count</metric-name>
+<entity>
+<entity-type>APPLICATION_COMPONENT</entity-type>
+<application-component>AppDynamicsVM</application-component>
+</entity>
+</metric-definition>
+</metric-expression>
+</policy-condition>
+</critical-execution-criteria>
+<warning-execution-criteria>
+<entity-aggregation-scope>
+<type>ANY</type>
+<value>0</value>
+</entity-aggregation-scope>
+<policy-condition>
+<type>leaf</type>
+<display-name>statusNotSuccesful</display-name>
+<condition-value-type>ABSOLUTE</condition-value-type>
+<condition-value>15.0</condition-value>
+<operator>LESS_THAN</operator>
+<condition-expression/>
+<use-active-baseline>false</use-active-baseline>
+<metric-expression>
+<type>leaf</type>
+<function-type>SUM</function-type>
+<value>0</value>
+<is-literal-expression>false</is-literal-expression>
+<display-name>null</display-name>
+<metric-definition>
+<type>ABSOLUTE_METRIC_SCOPE</type>
+<logical-metric-name>Application Infrastructure Performance|AppDynamicsVM|Custom Metrics|URL Monitor|NEW_MBBC_RUCM|Status</logical-metric-name>
+<metric-name>Custom Metrics|URL Monitor|NEW_MBBC_RUCM|Status</metric-name>
+<entity>
+<entity-type>APPLICATION_COMPONENT</entity-type>
+<application-component>AppDynamicsVM</application-component>
+</entity>
+</metric-definition>
+</metric-expression>
+</policy-condition>
+</warning-execution-criteria>
+</health-rule>
+
+
+<health-rule>
+<name>Availability_new_mbbc_disp</name>
+<type>OTHER</type>
+<description/>
+<enabled>true</enabled>
+<is-default>false</is-default>
+<always-enabled>true</always-enabled>
+<duration-min>20</duration-min>
+<wait-time-min>30</wait-time-min>
+<affected-entities-match-criteria>
+<other-affected-entities-match-criteria>
+<entity>
+<entity-type>APPLICATION</entity-type>
+</entity>
+</other-affected-entities-match-criteria>
+</affected-entities-match-criteria>
+<critical-execution-criteria>
+<entity-aggregation-scope>
+<type>ANY</type>
+<value>0</value>
+</entity-aggregation-scope>
+<policy-condition>
+<type>leaf</type>
+<display-name>testFailed</display-name>
+<condition-value-type>ABSOLUTE</condition-value-type>
+<condition-value>2.0</condition-value>
+<operator>GREATER_THAN</operator>
+<condition-expression/>
+<use-active-baseline>false</use-active-baseline>
+<metric-expression>
+<type>leaf</type>
+<function-type>SUM</function-type>
+<value>0</value>
+<is-literal-expression>false</is-literal-expression>
+<display-name>null</display-name>
+<metric-definition>
+<type>ABSOLUTE_METRIC_SCOPE</type>
+<logical-metric-name>Application Infrastructure Performance|AppDynamicsVM|Custom Metrics|URL Monitor|NEW_MBBC_DISP|Pattern Matches|TestFailed|Count</logical-metric-name>
+<metric-name>Custom Metrics|URL Monitor|NEW_MBBC_DISP|Pattern Matches|TestFailed|Count</metric-name>
+<entity>
+<entity-type>APPLICATION_COMPONENT</entity-type>
+<application-component>AppDynamicsVM</application-component>
+</entity>
+</metric-definition>
+</metric-expression>
+</policy-condition>
+</critical-execution-criteria>
+<warning-execution-criteria>
+<entity-aggregation-scope>
+<type>ANY</type>
+<value>0</value>
+</entity-aggregation-scope>
+<policy-condition>
+<type>leaf</type>
+<display-name>statusNotSuccesful</display-name>
+<condition-value-type>ABSOLUTE</condition-value-type>
+<condition-value>15.0</condition-value>
+<operator>LESS_THAN</operator>
+<condition-expression/>
+<use-active-baseline>false</use-active-baseline>
+<metric-expression>
+<type>leaf</type>
+<function-type>SUM</function-type>
+<value>0</value>
+<is-literal-expression>false</is-literal-expression>
+<display-name>null</display-name>
+<metric-definition>
+<type>ABSOLUTE_METRIC_SCOPE</type>
+<logical-metric-name>Application Infrastructure Performance|AppDynamicsVM|Custom Metrics|URL Monitor|NEW_MBBC_DISP|Status</logical-metric-name>
+<metric-name>Custom Metrics|URL Monitor|NEW_MBBC_DISP|Status</metric-name>
+<entity>
+<entity-type>APPLICATION_COMPONENT</entity-type>
+<application-component>AppDynamicsVM</application-component>
+</entity>
+</metric-definition>
+</metric-expression>
+</policy-condition>
+</warning-execution-criteria>
+</health-rule>
+
+
+<health-rule>
+<name>Availability_new_mbbs_speech</name>
+<type>OTHER</type>
+<description/>
+<enabled>true</enabled>
+<is-default>false</is-default>
+<always-enabled>true</always-enabled>
+<duration-min>20</duration-min>
+<wait-time-min>30</wait-time-min>
+<affected-entities-match-criteria>
+<other-affected-entities-match-criteria>
+<entity>
+<entity-type>APPLICATION</entity-type>
+</entity>
+</other-affected-entities-match-criteria>
+</affected-entities-match-criteria>
+<critical-execution-criteria>
+<entity-aggregation-scope>
+<type>ANY</type>
+<value>0</value>
+</entity-aggregation-scope>
+<policy-condition>
+<type>leaf</type>
+<display-name>testFailed</display-name>
+<condition-value-type>ABSOLUTE</condition-value-type>
+<condition-value>2.0</condition-value>
+<operator>GREATER_THAN</operator>
+<condition-expression/>
+<use-active-baseline>false</use-active-baseline>
+<metric-expression>
+<type>leaf</type>
+<function-type>SUM</function-type>
+<value>0</value>
+<is-literal-expression>false</is-literal-expression>
+<display-name>null</display-name>
+<metric-definition>
+<type>ABSOLUTE_METRIC_SCOPE</type>
+<logical-metric-name>Application Infrastructure Performance|AppDynamicsVM|Custom Metrics|URL Monitor|NEW_MBBS_SPEECH|Pattern Matches|TestFailed|Count</logical-metric-name>
+<metric-name>Custom Metrics|URL Monitor|NEW_MBBS_SPEECH|Pattern Matches|TestFailed|Count</metric-name>
+<entity>
+<entity-type>APPLICATION_COMPONENT</entity-type>
+<application-component>AppDynamicsVM</application-component>
+</entity>
+</metric-definition>
+</metric-expression>
+</policy-condition>
+</critical-execution-criteria>
+<warning-execution-criteria>
+<entity-aggregation-scope>
+<type>ANY</type>
+<value>0</value>
+</entity-aggregation-scope>
+<policy-condition>
+<type>leaf</type>
+<display-name>statusNotSuccesful</display-name>
+<condition-value-type>ABSOLUTE</condition-value-type>
+<condition-value>15.0</condition-value>
+<operator>LESS_THAN</operator>
+<condition-expression/>
+<use-active-baseline>false</use-active-baseline>
+<metric-expression>
+<type>leaf</type>
+<function-type>SUM</function-type>
+<value>0</value>
+<is-literal-expression>false</is-literal-expression>
+<display-name>null</display-name>
+<metric-definition>
+<type>ABSOLUTE_METRIC_SCOPE</type>
+<logical-metric-name>Application Infrastructure Performance|AppDynamicsVM|Custom Metrics|URL Monitor|NEW_MBBS_SPEECH|Status</logical-metric-name>
+<metric-name>Custom Metrics|URL Monitor|NEW_MBBS_SPEECH|Status</metric-name>
+<entity>
+<entity-type>APPLICATION_COMPONENT</entity-type>
+<application-component>AppDynamicsVM</application-component>
+</entity>
+</metric-definition>
+</metric-expression>
+</policy-condition>
+</warning-execution-criteria>
+</health-rule>
+
+
+<health-rule>
+<name>Availability_new_mbbs_menue</name>
+<type>OTHER</type>
+<description/>
+<enabled>true</enabled>
+<is-default>false</is-default>
+<always-enabled>true</always-enabled>
+<duration-min>20</duration-min>
+<wait-time-min>30</wait-time-min>
+<affected-entities-match-criteria>
+<other-affected-entities-match-criteria>
+<entity>
+<entity-type>APPLICATION</entity-type>
+</entity>
+</other-affected-entities-match-criteria>
+</affected-entities-match-criteria>
+<critical-execution-criteria>
+<entity-aggregation-scope>
+<type>ANY</type>
+<value>0</value>
+</entity-aggregation-scope>
+<policy-condition>
+<type>leaf</type>
+<display-name>testFailed</display-name>
+<condition-value-type>ABSOLUTE</condition-value-type>
+<condition-value>2.0</condition-value>
+<operator>GREATER_THAN</operator>
+<condition-expression/>
+<use-active-baseline>false</use-active-baseline>
+<metric-expression>
+<type>leaf</type>
+<function-type>SUM</function-type>
+<value>0</value>
+<is-literal-expression>false</is-literal-expression>
+<display-name>null</display-name>
+<metric-definition>
+<type>ABSOLUTE_METRIC_SCOPE</type>
+<logical-metric-name>Application Infrastructure Performance|AppDynamicsVM|Custom Metrics|URL Monitor|NEW_MBBS_MENUE|Pattern Matches|TestFailed|Count</logical-metric-name>
+<metric-name>Custom Metrics|URL Monitor|NEW_MBBS_MENUE|Pattern Matches|TestFailed|Count</metric-name>
+<entity>
+<entity-type>APPLICATION_COMPONENT</entity-type>
+<application-component>AppDynamicsVM</application-component>
+</entity>
+</metric-definition>
+</metric-expression>
+</policy-condition>
+</critical-execution-criteria>
+<warning-execution-criteria>
+<entity-aggregation-scope>
+<type>ANY</type>
+<value>0</value>
+</entity-aggregation-scope>
+<policy-condition>
+<type>leaf</type>
+<display-name>statusNotSuccesful</display-name>
+<condition-value-type>ABSOLUTE</condition-value-type>
+<condition-value>15.0</condition-value>
+<operator>LESS_THAN</operator>
+<condition-expression/>
+<use-active-baseline>false</use-active-baseline>
+<metric-expression>
+<type>leaf</type>
+<function-type>SUM</function-type>
+<value>0</value>
+<is-literal-expression>false</is-literal-expression>
+<display-name>null</display-name>
+<metric-definition>
+<type>ABSOLUTE_METRIC_SCOPE</type>
+<logical-metric-name>Application Infrastructure Performance|AppDynamicsVM|Custom Metrics|URL Monitor|NEW_MBBS_MENUE|Status</logical-metric-name>
+<metric-name>Custom Metrics|URL Monitor|NEW_MBBS_MENUE|Status</metric-name>
+<entity>
+<entity-type>APPLICATION_COMPONENT</entity-type>
+<application-component>AppDynamicsVM</application-component>
+</entity>
+</metric-definition>
+</metric-expression>
+</policy-condition>
+</warning-execution-criteria>
+</health-rule>
+
+
+<health-rule>
+<name>Availability_new_mbbs_ccss</name>
+<type>OTHER</type>
+<description/>
+<enabled>true</enabled>
+<is-default>false</is-default>
+<always-enabled>true</always-enabled>
+<duration-min>20</duration-min>
+<wait-time-min>30</wait-time-min>
+<affected-entities-match-criteria>
+<other-affected-entities-match-criteria>
+<entity>
+<entity-type>APPLICATION</entity-type>
+</entity>
+</other-affected-entities-match-criteria>
+</affected-entities-match-criteria>
+<critical-execution-criteria>
+<entity-aggregation-scope>
+<type>ANY</type>
+<value>0</value>
+</entity-aggregation-scope>
+<policy-condition>
+<type>leaf</type>
+<display-name>testFailed</display-name>
+<condition-value-type>ABSOLUTE</condition-value-type>
+<condition-value>2.0</condition-value>
+<operator>GREATER_THAN</operator>
+<condition-expression/>
+<use-active-baseline>false</use-active-baseline>
+<metric-expression>
+<type>leaf</type>
+<function-type>SUM</function-type>
+<value>0</value>
+<is-literal-expression>false</is-literal-expression>
+<display-name>null</display-name>
+<metric-definition>
+<type>ABSOLUTE_METRIC_SCOPE</type>
+<logical-metric-name>Application Infrastructure Performance|AppDynamicsVM|Custom Metrics|URL Monitor|NEW_MBBS_CCSS|Pattern Matches|TestFailed|Count</logical-metric-name>
+<metric-name>Custom Metrics|URL Monitor|NEW_MBBS_CCSS|Pattern Matches|TestFailed|Count</metric-name>
+<entity>
+<entity-type>APPLICATION_COMPONENT</entity-type>
+<application-component>AppDynamicsVM</application-component>
+</entity>
+</metric-definition>
+</metric-expression>
+</policy-condition>
+</critical-execution-criteria>
+<warning-execution-criteria>
+<entity-aggregation-scope>
+<type>ANY</type>
+<value>0</value>
+</entity-aggregation-scope>
+<policy-condition>
+<type>leaf</type>
+<display-name>statusNotSuccesful</display-name>
+<condition-value-type>ABSOLUTE</condition-value-type>
+<condition-value>15.0</condition-value>
+<operator>LESS_THAN</operator>
+<condition-expression/>
+<use-active-baseline>false</use-active-baseline>
+<metric-expression>
+<type>leaf</type>
+<function-type>SUM</function-type>
+<value>0</value>
+<is-literal-expression>false</is-literal-expression>
+<display-name>null</display-name>
+<metric-definition>
+<type>ABSOLUTE_METRIC_SCOPE</type>
+<logical-metric-name>Application Infrastructure Performance|AppDynamicsVM|Custom Metrics|URL Monitor|NEW_MBBS_CCSS|Status</logical-metric-name>
+<metric-name>Custom Metrics|URL Monitor|NEW_MBBS_CCSS|Status</metric-name>
+<entity>
+<entity-type>APPLICATION_COMPONENT</entity-type>
+<application-component>AppDynamicsVM</application-component>
+</entity>
+</metric-definition>
+</metric-expression>
+</policy-condition>
+</warning-execution-criteria>
+</health-rule>
+
+
+<health-rule>
+<name>Availability_new_mbbs_tss</name>
+<type>OTHER</type>
+<description/>
+<enabled>true</enabled>
+<is-default>false</is-default>
+<always-enabled>true</always-enabled>
+<duration-min>20</duration-min>
+<wait-time-min>30</wait-time-min>
+<affected-entities-match-criteria>
+<other-affected-entities-match-criteria>
+<entity>
+<entity-type>APPLICATION</entity-type>
+</entity>
+</other-affected-entities-match-criteria>
+</affected-entities-match-criteria>
+<critical-execution-criteria>
+<entity-aggregation-scope>
+<type>ANY</type>
+<value>0</value>
+</entity-aggregation-scope>
+<policy-condition>
+<type>leaf</type>
+<display-name>testFailed</display-name>
+<condition-value-type>ABSOLUTE</condition-value-type>
+<condition-value>2.0</condition-value>
+<operator>GREATER_THAN</operator>
+<condition-expression/>
+<use-active-baseline>false</use-active-baseline>
+<metric-expression>
+<type>leaf</type>
+<function-type>SUM</function-type>
+<value>0</value>
+<is-literal-expression>false</is-literal-expression>
+<display-name>null</display-name>
+<metric-definition>
+<type>ABSOLUTE_METRIC_SCOPE</type>
+<logical-metric-name>Application Infrastructure Performance|AppDynamicsVM|Custom Metrics|URL Monitor|NEW_MBBS_TSS|Pattern Matches|TestFailed|Count</logical-metric-name>
+<metric-name>Custom Metrics|URL Monitor|NEW_MBBS_TSS|Pattern Matches|TestFailed|Count</metric-name>
+<entity>
+<entity-type>APPLICATION_COMPONENT</entity-type>
+<application-component>AppDynamicsVM</application-component>
+</entity>
+</metric-definition>
+</metric-expression>
+</policy-condition>
+</critical-execution-criteria>
+<warning-execution-criteria>
+<entity-aggregation-scope>
+<type>ANY</type>
+<value>0</value>
+</entity-aggregation-scope>
+<policy-condition>
+<type>leaf</type>
+<display-name>statusNotSuccesful</display-name>
+<condition-value-type>ABSOLUTE</condition-value-type>
+<condition-value>15.0</condition-value>
+<operator>LESS_THAN</operator>
+<condition-expression/>
+<use-active-baseline>false</use-active-baseline>
+<metric-expression>
+<type>leaf</type>
+<function-type>SUM</function-type>
+<value>0</value>
+<is-literal-expression>false</is-literal-expression>
+<display-name>null</display-name>
+<metric-definition>
+<type>ABSOLUTE_METRIC_SCOPE</type>
+<logical-metric-name>Application Infrastructure Performance|AppDynamicsVM|Custom Metrics|URL Monitor|NEW_MBBS_TSS|Status</logical-metric-name>
+<metric-name>Custom Metrics|URL Monitor|NEW_MBBS_TSS|Status</metric-name>
+<entity>
+<entity-type>APPLICATION_COMPONENT</entity-type>
+<application-component>AppDynamicsVM</application-component>
+</entity>
+</metric-definition>
+</metric-expression>
+</policy-condition>
+</warning-execution-criteria>
+</health-rule>
+
+
+<health-rule>
+<name>Availability_new_mbbs_applst</name>
+<type>OTHER</type>
+<description/>
+<enabled>true</enabled>
+<is-default>false</is-default>
+<always-enabled>true</always-enabled>
+<duration-min>20</duration-min>
+<wait-time-min>30</wait-time-min>
+<affected-entities-match-criteria>
+<other-affected-entities-match-criteria>
+<entity>
+<entity-type>APPLICATION</entity-type>
+</entity>
+</other-affected-entities-match-criteria>
+</affected-entities-match-criteria>
+<critical-execution-criteria>
+<entity-aggregation-scope>
+<type>ANY</type>
+<value>0</value>
+</entity-aggregation-scope>
+<policy-condition>
+<type>leaf</type>
+<display-name>testFailed</display-name>
+<condition-value-type>ABSOLUTE</condition-value-type>
+<condition-value>2.0</condition-value>
+<operator>GREATER_THAN</operator>
+<condition-expression/>
+<use-active-baseline>false</use-active-baseline>
+<metric-expression>
+<type>leaf</type>
+<function-type>SUM</function-type>
+<value>0</value>
+<is-literal-expression>false</is-literal-expression>
+<display-name>null</display-name>
+<metric-definition>
+<type>ABSOLUTE_METRIC_SCOPE</type>
+<logical-metric-name>Application Infrastructure Performance|AppDynamicsVM|Custom Metrics|URL Monitor|NEW_MBBS_APPLST|Pattern Matches|TestFailed|Count</logical-metric-name>
+<metric-name>Custom Metrics|URL Monitor|NEW_MBBS_APPLST|Pattern Matches|TestFailed|Count</metric-name>
+<entity>
+<entity-type>APPLICATION_COMPONENT</entity-type>
+<application-component>AppDynamicsVM</application-component>
+</entity>
+</metric-definition>
+</metric-expression>
+</policy-condition>
+</critical-execution-criteria>
+<warning-execution-criteria>
+<entity-aggregation-scope>
+<type>ANY</type>
+<value>0</value>
+</entity-aggregation-scope>
+<policy-condition>
+<type>leaf</type>
+<display-name>statusNotSuccesful</display-name>
+<condition-value-type>ABSOLUTE</condition-value-type>
+<condition-value>15.0</condition-value>
+<operator>LESS_THAN</operator>
+<condition-expression/>
+<use-active-baseline>false</use-active-baseline>
+<metric-expression>
+<type>leaf</type>
+<function-type>SUM</function-type>
+<value>0</value>
+<is-literal-expression>false</is-literal-expression>
+<display-name>null</display-name>
+<metric-definition>
+<type>ABSOLUTE_METRIC_SCOPE</type>
+<logical-metric-name>Application Infrastructure Performance|AppDynamicsVM|Custom Metrics|URL Monitor|NEW_MBBS_APPLST|Status</logical-metric-name>
+<metric-name>Custom Metrics|URL Monitor|NEW_MBBS_APPLST|Status</metric-name>
+<entity>
+<entity-type>APPLICATION_COMPONENT</entity-type>
+<application-component>AppDynamicsVM</application-component>
+</entity>
+</metric-definition>
+</metric-expression>
+</policy-condition>
+</warning-execution-criteria>
+</health-rule>
+
+
+<health-rule>
+        <name>Availability_new_mbbc</name>
+        <type>OTHER</type>
+        <description/>
+        <enabled>true</enabled>
+        <is-default>false</is-default>
+        <always-enabled>true</always-enabled>
+        <duration-min>20</duration-min>
+        <wait-time-min>30</wait-time-min>
+        <affected-entities-match-criteria>
+            <other-affected-entities-match-criteria>
+                <entity>
+                    <entity-type>APPLICATION</entity-type>
+                </entity>
+            </other-affected-entities-match-criteria>
+        </affected-entities-match-criteria>
+        <critical-execution-criteria>
+            <entity-aggregation-scope>
+                <type>ANY</type>
+                <value>0</value>
+            </entity-aggregation-scope>
+            <policy-condition>
+                <type>boolean</type>
+                <operator>OR</operator>
+                <condition1>
+                    <type>leaf</type>
+                    <display-name>dispFailed</display-name>
+                    <condition-value-type>ABSOLUTE</condition-value-type>
+                    <condition-value>2.0</condition-value>
+                    <operator>GREATER_THAN</operator>
+                    <condition-expression/>
+                    <use-active-baseline>false</use-active-baseline>
+                    <metric-expression>
+                        <type>leaf</type>
+                        <function-type>SUM</function-type>
+                        <value>0</value>
+                        <is-literal-expression>false</is-literal-expression>
+                        <display-name>null</display-name>
+                        <metric-definition>
+                            <type>ABSOLUTE_METRIC_SCOPE</type>
+                            <logical-metric-name>Application Infrastructure Performance|AppDynamicsVM|Custom Metrics|URL Monitor|NEW_MBBC_DISP|Pattern Matches|TestFailed|Count</logical-metric-name>
+                            <metric-name>Custom Metrics|URL Monitor|NEW_MBBC_DISP|Pattern Matches|TestFailed|Count</metric-name>
+                            <entity>
+                                <entity-type>APPLICATION_COMPONENT</entity-type>
+                                <application-component>AppDynamicsVM</application-component>
+                            </entity>
+                        </metric-definition>
+                    </metric-expression>
+                </condition1>
+                <condition2>
+                    <type>boolean</type>
+                    <operator>OR</operator>
+                    <condition1>
+                        <type>leaf</type>
+                        <display-name>mgmtFailed</display-name>
+                        <condition-value-type>ABSOLUTE</condition-value-type>
+                        <condition-value>2.0</condition-value>
+                        <operator>GREATER_THAN</operator>
+                        <condition-expression/>
+                        <use-active-baseline>false</use-active-baseline>
+                        <metric-expression>
+                            <type>leaf</type>
+                            <function-type>SUM</function-type>
+                            <value>0</value>
+                            <is-literal-expression>false</is-literal-expression>
+                            <display-name>null</display-name>
+                            <metric-definition>
+                                <type>ABSOLUTE_METRIC_SCOPE</type>
+                                <logical-metric-name>Application Infrastructure Performance|AppDynamicsVM|Custom Metrics|URL Monitor|NEW_MBBC_MGMT|Pattern Matches|TestFailed|Count</logical-metric-name>
+                                <metric-name>Custom Metrics|URL Monitor|NEW_MBBC_MGMT|Pattern Matches|TestFailed|Count</metric-name>
+                                <entity>
+                                    <entity-type>APPLICATION_COMPONENT</entity-type>
+                                    <application-component>AppDynamicsVM</application-component>
+                                </entity>
+                            </metric-definition>
+                        </metric-expression>
+                    </condition1>
+                    <condition2>
+                        <type>boolean</type>
+                        <operator>OR</operator>
+                        <condition1>
+                            <type>leaf</type>
+                            <display-name>logaccFailed</display-name>
+                            <condition-value-type>ABSOLUTE</condition-value-type>
+                            <condition-value>2.0</condition-value>
+                            <operator>GREATER_THAN</operator>
+                            <condition-expression/>
+                            <use-active-baseline>false</use-active-baseline>
+                            <metric-expression>
+                                <type>leaf</type>
+                                <function-type>SUM</function-type>
+                                <value>0</value>
+                                <is-literal-expression>false</is-literal-expression>
+                                <display-name>null</display-name>
+                                <metric-definition>
+                                    <type>ABSOLUTE_METRIC_SCOPE</type>
+                                    <logical-metric-name>Application Infrastructure Performance|AppDynamicsVM|Custom Metrics|URL Monitor|NEW_MBBC_LOGACC|Pattern Matches|TestFailed|Count</logical-metric-name>
+                                    <metric-name>Custom Metrics|URL Monitor|NEW_MBBC_LOGACC|Pattern Matches|TestFailed|Count</metric-name>
+                                    <entity>
+                                    <entity-type>APPLICATION_COMPONENT</entity-type>
+                                    <application-component>AppDynamicsVM</application-component>
+                                    </entity>
+                                </metric-definition>
+                            </metric-expression>
+                        </condition1>
+                        <condition2>
+                            <type>boolean</type>
+                            <operator>OR</operator>
+                            <condition1>
+                                <type>leaf</type>
+                                <display-name>padiFailed</display-name>
+                                <condition-value-type>ABSOLUTE</condition-value-type>
+                                <condition-value>2.0</condition-value>
+                                <operator>GREATER_THAN</operator>
+                                <condition-expression/>
+                                <use-active-baseline>false</use-active-baseline>
+                                <metric-expression>
+                                    <type>leaf</type>
+                                    <function-type>SUM</function-type>
+                                    <value>0</value>
+                                    <is-literal-expression>false</is-literal-expression>
+                                    <display-name>null</display-name>
+                                    <metric-definition>
+                                    <type>ABSOLUTE_METRIC_SCOPE</type>
+                                    <logical-metric-name>Application Infrastructure Performance|AppDynamicsVM|Custom Metrics|URL Monitor|NEW_MBBC_PADI|Pattern Matches|TestFailed|Count</logical-metric-name>
+                                    <metric-name>Custom Metrics|URL Monitor|NEW_MBBC_PADI|Pattern Matches|TestFailed|Count</metric-name>
+                                    <entity>
+                                    <entity-type>APPLICATION_COMPONENT</entity-type>
+                                    <application-component>AppDynamicsVM</application-component>
+                                    </entity>
+                                    </metric-definition>
+                                </metric-expression>
+                            </condition1>
+                            <condition2>
+                                <type>boolean</type>
+                                <operator>OR</operator>
+                                <condition1>
+                                    <type>leaf</type>
+                                    <display-name>rucmFailed</display-name>
+                                    <condition-value-type>ABSOLUTE</condition-value-type>
+                                    <condition-value>2.0</condition-value>
+                                    <operator>GREATER_THAN</operator>
+                                    <condition-expression/>
+                                    <use-active-baseline>false</use-active-baseline>
+                                    <metric-expression>
+                                    <type>leaf</type>
+                                    <function-type>SUM</function-type>
+                                    <value>0</value>
+                                    <is-literal-expression>false</is-literal-expression>
+                                    <display-name>null</display-name>
+                                    <metric-definition>
+                                    <type>ABSOLUTE_METRIC_SCOPE</type>
+                                    <logical-metric-name>Application Infrastructure Performance|AppDynamicsVM|Custom Metrics|URL Monitor|NEW_MBBC_RUCM|Pattern Matches|TestFailed|Count</logical-metric-name>
+                                    <metric-name>Custom Metrics|URL Monitor|NEW_MBBC_RUCM|Pattern Matches|TestFailed|Count</metric-name>
+                                    <entity>
+                                    <entity-type>APPLICATION_COMPONENT</entity-type>
+                                    <application-component>AppDynamicsVM</application-component>
+                                    </entity>
+                                    </metric-definition>
+                                    </metric-expression>
+                                </condition1>
+                                <condition2>
+                                    <type>leaf</type>
+                                    <display-name>sokoFailed</display-name>
+                                    <condition-value-type>ABSOLUTE</condition-value-type>
+                                    <condition-value>2.0</condition-value>
+                                    <operator>GREATER_THAN</operator>
+                                    <condition-expression/>
+                                    <use-active-baseline>false</use-active-baseline>
+                                    <metric-expression>
+                                    <type>leaf</type>
+                                    <function-type>SUM</function-type>
+                                    <value>0</value>
+                                    <is-literal-expression>false</is-literal-expression>
+                                    <display-name>null</display-name>
+                                    <metric-definition>
+                                    <type>ABSOLUTE_METRIC_SCOPE</type>
+                                    <logical-metric-name>Application Infrastructure Performance|AppDynamicsVM|Custom Metrics|URL Monitor|NEW_MBBC_SOKO|Pattern Matches|TestFailed|Count</logical-metric-name>
+                                    <metric-name>Custom Metrics|URL Monitor|NEW_MBBC_SOKO|Pattern Matches|TestFailed|Count</metric-name>
+                                    <entity>
+                                    <entity-type>APPLICATION_COMPONENT</entity-type>
+                                    <application-component>AppDynamicsVM</application-component>
+                                    </entity>
+                                    </metric-definition>
+                                    </metric-expression>
+                                </condition2>
+                            </condition2>
+                        </condition2>
+                    </condition2>
+                </condition2>
+            </policy-condition>
+        </critical-execution-criteria>
+    </health-rule>
+
+
+<health-rule>
+        <name>Availability_Machine_URLMonitor</name>
+        <type>OTHER</type>
+        <description/>
+        <enabled>true</enabled>
+        <is-default>false</is-default>
+        <always-enabled>true</always-enabled>
+        <duration-min>5</duration-min>
+        <wait-time-min>30</wait-time-min>
+        <affected-entities-match-criteria>
+            <other-affected-entities-match-criteria>
+                <entity>
+                    <entity-type>APPLICATION</entity-type>
+                </entity>
+            </other-affected-entities-match-criteria>
+        </affected-entities-match-criteria>
+        <critical-execution-criteria>
+            <entity-aggregation-scope>
+                <type>ANY</type>
+                <value>0</value>
+            </entity-aggregation-scope>
+            <policy-condition>
+                <type>leaf</type>
+                <display-name>machineAvailable</display-name>
+                <condition-value-type>ABSOLUTE</condition-value-type>
+                <condition-value>4.0</condition-value>
+                <operator>LESS_THAN</operator>
+                <condition-expression/>
+                <use-active-baseline>false</use-active-baseline>
+                <metric-expression>
+                    <type>leaf</type>
+                    <function-type>SUM</function-type>
+                    <value>0</value>
+                    <is-literal-expression>false</is-literal-expression>
+                    <display-name>null</display-name>
+                    <metric-definition>
+                        <type>ABSOLUTE_METRIC_SCOPE</type>
+                        <logical-metric-name>Application Infrastructure Performance|AppDynamicsVM|Agent|Machine|Availability</logical-metric-name>
+                        <metric-name>Agent|Machine|Availability</metric-name>
+                        <entity>
+                            <entity-type>APPLICATION_COMPONENT</entity-type>
+                            <application-component>AppDynamicsVM</application-component>
+                        </entity>
+                    </metric-definition>
+                </metric-expression>
+            </policy-condition>
+        </critical-execution-criteria>
+    </health-rule>
+
+</health-rules>
