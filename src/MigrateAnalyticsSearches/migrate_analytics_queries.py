@@ -7,9 +7,9 @@ import json
 import re
 
 ch = ControllerHandler("https",
-                       "swisscom.saas.appdynamics.com",
+                       "asdasdasd",
                        "443",
-                       "c27aa15101b9528530a847a6044d",
+                       "asdadasd",
                        True)
 
 blacklistPatterns = ["(?i).*bupa.*"]
