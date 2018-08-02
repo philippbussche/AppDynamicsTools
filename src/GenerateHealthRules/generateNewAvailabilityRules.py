@@ -371,7 +371,7 @@ extensionName = "URL Monitor"
 server= "localhost"
 port = "7090"
 user = "admin@customer1"
-password = "AppDyn#2015"
+password = "sdfsdfsdfsdf"
 xmlExportFile = open("xmlExport.xml", 'w')
 xmlExportFile.truncate()
 xmlExportFile.write(getRulXMLHeader())
